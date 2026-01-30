@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour
 {
 	[Header("Player")]
 	[SerializeField] private bool isPlayer1 = true;
+	[SerializeField] private int health = 100;
 
 	[Header("Movement")]
 	[SerializeField] private float moveSpeed = 5f;
@@ -29,7 +30,14 @@ public class PlayerController : MonoBehaviour
 
 	private void Update()
 	{
+		Dictionary<Key, KeyCode> map = isPlayer1 ? Keys.Player1Keys : Keys.Player2Keys;
+
 		UpdateMovement();
+
+		if(Input.GetKeyDown(map[Key.Fire]))
+		{
+			GameManager.Instance.Fire(this);
+		}
 	}
 
 	private void UpdateMovement()
@@ -57,6 +65,15 @@ public class PlayerController : MonoBehaviour
 			Facing = GetFacingFromInput(input);
 
 			LastMoveDir = move.normalized;
+		}
+	}
+
+	public void ReceiveDamage(int damage)
+	{
+		health = health - damage;
+		if (health <= 0)
+		{
+			GameManager.Instance.OnPlayerDeath(this);
 		}
 	}
 

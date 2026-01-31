@@ -22,8 +22,7 @@ public static class Prefabs
         Fireball =			Resources.Load<GameObject>("Prefabs/FireBall");
         FirePit =			Resources.Load<GameObject>("Prefabs/FirePit");
 
-    }
-
+        Fireball = Resources.Load<GameObject>("Prefabs/FireBall");
 
 
 

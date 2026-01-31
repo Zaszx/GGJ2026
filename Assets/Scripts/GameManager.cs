@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -54,6 +55,6 @@ public class GameManager : MonoBehaviour
 
     public void OnPlayerDeath(Player deadPlayer)
 	{
-
+		SceneManager.LoadScene("GameOver");
 	}
 }

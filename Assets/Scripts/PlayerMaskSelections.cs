@@ -13,4 +13,6 @@ public static class PlayerMaskSelections
 	public static ShamanMask Player1Mask;
     public static ShamanMask Player2Mask;
 
+	public static bool PlayerOneWins;
+
 }

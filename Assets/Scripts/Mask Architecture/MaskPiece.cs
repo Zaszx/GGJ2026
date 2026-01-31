@@ -9,4 +9,4 @@ public class MaskPiece
 }
 public enum MaskPieceType { Face, Teeth, Crown }
 public enum Element { Air, Water, Fire, Earth }
-public enum CooldownType { None,Fast, Medium, Slow }
+public enum CooldownType { None, Fast, Medium, Slow, Ulti }

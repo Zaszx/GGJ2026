@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class MaskSelector : MonoBehaviour
 {
+	public bool isTest=false;
 	public TMP_Text titleText;
 
     public MaskPartSelector topSelector;	//Crown
@@ -52,9 +53,11 @@ public class MaskSelector : MonoBehaviour
 
             ShamanMask p2Mask = new(topSelector.GetMaskPiece(), midSelector.GetMaskPiece(), bottomSelector.GetMaskPiece());
 
-            PlayerMaskSelections.Player1Mask = p2Mask;
+            PlayerMaskSelections.Player2Mask = p2Mask;
 
-            SceneManager.LoadScene("Arena");
+			if (!isTest)
+				SceneManager.LoadScene("Arena");
+			else SceneManager.LoadScene("AgahTest");
 		}
 	}
 }

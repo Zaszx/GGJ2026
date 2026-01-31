@@ -18,9 +18,9 @@ public class SpriteLoader : MonoBehaviour
         maskFACESprites = Resources.LoadAll<Sprite>("Sprites/maskFACESpriteAtlas");
         maskTEETHSprites = Resources.LoadAll<Sprite>("Sprites/maskTEETHSpriteAtlas");
 
-        Debug.Log(maskTEETHSprites.Length);
-		Debug.Log(maskFACESprites.Length);
-		Debug.Log(maskCROWNSprites.Length);
+        Debug.Assert(maskTEETHSprites.Length > 0);
+		Debug.Assert(maskFACESprites.Length > 0);
+		Debug.Assert(maskCROWNSprites.Length > 0);
     }
 
 	public Sprite GetMaskSpriteByElementAndType(Element element, MaskPieceType type)

@@ -10,6 +10,7 @@ public class MaskPartSelector : MonoBehaviour
 	MaskPiece _maskPiece;
 	public void Init(MaskPiece maskPiece)
 	{
+		_maskPiece = maskPiece;
 		maskPartSprites = SpriteLoader.instance.GetMaskSpritesByType(maskPiece.type);
 		selectedIndex = 0;
         UpdateSprite();
@@ -42,7 +43,7 @@ public class MaskPartSelector : MonoBehaviour
 	}
 	public MaskPiece GetMaskPiece()
 	{
-		_maskPiece.type = (MaskPieceType)selectedIndex;
+		_maskPiece.element = (Element)selectedIndex;
 		return _maskPiece;
 	}
 }

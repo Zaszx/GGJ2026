@@ -5,9 +5,16 @@ public class SkillController : MonoBehaviour
 {
     Dictionary<SkillSlot, SkillInstance> skills;
 
+    private void OnEnable()
+    {
+        skills = new();
+    }
+
     public void SetSkills(List<SkillInstance> newSkills)
     {
-        // slotlara dağıt
+        skills.Add(SkillSlot.Ulti, newSkills[0]);
+        skills.Add(SkillSlot.BasicAttack, newSkills[1]);
+        skills.Add(SkillSlot.Defensive, newSkills[2]);
     }
 
     public void UseSkill(SkillSlot slot)
@@ -20,7 +27,7 @@ public class SkillController : MonoBehaviour
 public enum SkillSlot
 {
     None,
-    Attack,
+    BasicAttack,
     Defensive,
     Ulti
 }

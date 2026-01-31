@@ -119,6 +119,7 @@ public class PlayerController : MonoBehaviour
 		}
 	}
 	
+	//İki knockback yöntemini de tutuyorum isteyen istediğini kullansın -T
 	private void FixedUpdate()
 	{
 		switch (_isKnockedBack)
@@ -136,12 +137,8 @@ public class PlayerController : MonoBehaviour
 		}
 	}
 
+	
     private Vector2 externalVelocity;
-
-    private void FixedUpdate()
-    {
-        UpdateMovement(_moveDir);
-    }
 
     private void UpdateMovement(Vector2 dir)
     {

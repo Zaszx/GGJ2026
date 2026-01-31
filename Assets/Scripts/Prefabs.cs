@@ -22,11 +22,6 @@ public static class Prefabs
         Fireball = Resources.Load<GameObject>("Prefabs/FireBall");
         FireDash = Resources.Load<GameObject>("Prefabs/FireDash");
 
-    }
-
-
-
-
         AirBasic = Resources.Load<GameObject>("Prefabs/AirBasic");
 	}
 	

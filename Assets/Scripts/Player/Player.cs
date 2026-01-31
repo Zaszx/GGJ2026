@@ -1,6 +1,6 @@
 ﻿using NUnit.Framework;
 using UnityEngine;
-
+using UnityEngine.UI;
 
 public enum PlayerSelect
 {
@@ -11,8 +11,9 @@ public class Player : MonoBehaviour
 {
     [SerializeField] PlayerStats stats;
     [SerializeField] SkillController playerSkillController;
+	[SerializeField] Image healthBar;
 
-    private float currentHealth;
+	private float currentHealth;
 
     public string PlayerName => stats.PlayerName;
 
@@ -20,6 +21,8 @@ public class Player : MonoBehaviour
     private void Start()
     {
         currentHealth = stats.MaxHp;
+
+        healthBar.fillAmount = 1;
 
         ShamanMask player1Mask;
         ShamanMask player2Mask;
@@ -64,6 +67,7 @@ public class Player : MonoBehaviour
 	public void ReceiveDamage(float damage)
 	{
         currentHealth = currentHealth - damage;
+        healthBar.fillAmount = Mathf.Max(0.0f, currentHealth / stats.MaxHp);
 		if (currentHealth <= 0)
 		{
 			GameManager.Instance.OnPlayerDeath(this);

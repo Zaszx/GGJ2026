@@ -2,7 +2,7 @@
 using UnityEngine;
 
 [Serializable]
-public class MaskPiece
+public struct MaskPiece
 {
     public MaskPieceType type;
     [HideInInspector] public Element element;

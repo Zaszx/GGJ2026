@@ -1,4 +1,4 @@
-﻿public class ShamanMask
+﻿public struct ShamanMask
 {
     public MaskPiece crown;
     public MaskPiece face;

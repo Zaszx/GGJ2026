@@ -117,22 +117,32 @@ public class PlayerController : MonoBehaviour
 			}
 		}
 	}
-	
-	private void FixedUpdate()
-	{
-		UpdateMovement(_moveDir);
-	}
 
-	private void UpdateMovement(Vector2 dir)
-	{
-		_rb.linearVelocity = (dir * moveSpeed);
+    private Vector2 externalVelocity;
 
-		Facing = GetFacingFromInput(dir);
+    private void FixedUpdate()
+    {
+        UpdateMovement(_moveDir);
+    }
 
-		LastMoveDir = dir;
-	}
+    private void UpdateMovement(Vector2 dir)
+    {
+        Vector2 inputVelocity = dir * moveSpeed;
 
-	public void ReceiveDamage(int damage)
+        _rb.linearVelocity = inputVelocity + externalVelocity;
+
+        externalVelocity = Vector2.Lerp(externalVelocity,Vector2.zero,12f * Time.fixedDeltaTime);
+
+        Facing = GetFacingFromInput(dir);
+        LastMoveDir = dir;
+    }
+
+    public void AddExternalVelocity(Vector2 force)
+    {
+        externalVelocity += force;
+    }
+
+    public void ReceiveDamage(int damage)
 	{
 		health = health - damage;
 		if (health <= 0)

@@ -171,9 +171,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireBasicAttackBehaviour
   damage: 25
-  range: 10
   explosionRadius: 4
   speed: 15
+  lifeTime: 1
   flyEffect: {fileID: 319834955088973342}
   explosionEffect: {fileID: 8266072239444582942}
   RB: {fileID: 5549346860344477818}
@@ -5037,9 +5037,9 @@ ParticleSystemRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 294
+  m_SortingLayerID: 1888266535
+  m_SortingLayer: 2
+  m_SortingOrder: 100
   m_RenderMode: 0
   m_MeshDistribution: 0
   m_SortMode: 0
@@ -9873,9 +9873,9 @@ ParticleSystemRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 163
+  m_SortingLayerID: 1888266535
+  m_SortingLayer: 2
+  m_SortingOrder: 100
   m_RenderMode: 0
   m_MeshDistribution: 0
   m_SortMode: 0

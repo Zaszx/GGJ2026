@@ -16,11 +16,14 @@ public class FireBasicAttackBehaviour : MonoBehaviour
     [Header("Components")]
     [SerializeField] private Rigidbody2D RB;
 
+    private Player _owner;
 
-    public void Shoot(Vector3 castPos, Vector2 dir, bool enemyBullet = false)
+    public void Shoot(Vector3 castPos, Vector2 dir, Player owner)
     {
         transform.position = castPos;
         RB.linearVelocity = dir * speed;
+        _owner = owner;
+        IgnoreOwnerCollision();
     }
 
     private void FixedUpdate()
@@ -50,7 +53,8 @@ public class FireBasicAttackBehaviour : MonoBehaviour
             {
                 Debug.Log("player " + p.PlayerName + " was hit by Explosion");
                 //p.TakeDamage(damage);
-                p.GetComponent<Rigidbody2D>().AddForce((p.transform.position - transform.position).normalized * 5f, ForceMode2D.Impulse);
+                var dir = (Vector2)((p.transform.position - transform.position).normalized);
+                p.GetComponent<PlayerController>().AddExternalVelocity(dir * 25f);
             }
         }
 
@@ -59,5 +63,16 @@ public class FireBasicAttackBehaviour : MonoBehaviour
 
         GameObject.Destroy(explosionEffect.gameObject, 3f);
         Destroy(this.gameObject);
+    }
+
+    private void IgnoreOwnerCollision()
+    {
+        if (_owner == null) return;
+
+        var ownerCol = _owner.GetComponent<Collider2D>();
+        var myCol = GetComponent<Collider2D>();
+
+        if (ownerCol != null && myCol != null)
+            Physics2D.IgnoreCollision(myCol, ownerCol, true);
     }
 }

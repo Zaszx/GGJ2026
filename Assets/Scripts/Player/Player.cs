@@ -19,18 +19,24 @@ public class Player : MonoBehaviour
     {
         Foo();
 
-        ShamanMask playerMask;
-        if(stats.PlayerSelection == PlayerSelect.Player1)
+        ShamanMask player1Mask;
+        ShamanMask player2Mask;
+        if (stats.PlayerSelection == PlayerSelect.Player1)
         {
-            playerMask = PlayerMaskSelections.Player1Mask;
+            player1Mask = PlayerMaskSelections.Player1Mask;
+
+            var skills = MaskSkillFactory.CreateSkills(player1Mask);
+            playerSkillController.SetSkills(skills);
+        }
+        else if (stats.PlayerSelection == PlayerSelect.Player2)
+        {
+            player2Mask = PlayerMaskSelections.Player2Mask;
+
+            var skills = MaskSkillFactory.CreateSkills(player2Mask);
+            playerSkillController.SetSkills(skills);
         }
         else
         {
-            playerMask = PlayerMaskSelections.Player2Mask;
-        }
-        if (playerMask is null) //Hata varsa diye, oyunu bozmamak adına, normalde silinebilir
-        {
-            Debug.LogWarning("YOU LOADED FROM SOMEWHERE ELSE, LOAD FROM MASK SELECTION.");
 
             var crown = new MaskPiece();
             crown.type = MaskPieceType.Crown;
@@ -42,11 +48,13 @@ public class Player : MonoBehaviour
             teeth.type = MaskPieceType.Teeth;
             teeth.element = Element.Air;
 
-            playerMask = new ShamanMask(crown, face, teeth);
-        }
+            player1Mask = new ShamanMask(crown, face, teeth);
 
-        var skills = MaskSkillFactory.CreateSkills(playerMask);
-        playerSkillController.SetSkills(skills);
+            var skills = MaskSkillFactory.CreateSkills(player1Mask);
+            playerSkillController.SetSkills(skills);
+        }
+        Debug.Log(PlayerMaskSelections.Player1Mask.face.GetHashCode());
+        Debug.Log(PlayerMaskSelections.Player2Mask.face.GetHashCode());
 
         // playerSkillController.UseSkill(SkillSlot.BasicAttack);
         // playerSkillController.UseSkill(SkillSlot.Defensive);

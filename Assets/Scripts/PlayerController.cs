@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public enum FacingDirection
 {
@@ -13,7 +14,7 @@ public enum FacingDirection
 	UpLeft
 }
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : MonoBehaviour 
 {
 	[Header("Player")]
 	[SerializeField] private bool isPlayer1 = true;
@@ -27,45 +28,55 @@ public class PlayerController : MonoBehaviour
 
 	// Optional: last non-zero move direction as a vector (handy for aiming, etc.)
 	public Vector2 LastMoveDir { get; private set; } = Vector2.down;
+	
+	[Header("Controls")]
+	private PlayerInput _playerInput;
+	private InputActionAsset _inputActionAsset;
+	private Vector2 _moveDir;
+	private string PlayerPrefix => isPlayer1 ? "1" : "2";
+
+	private void Awake()
+	{
+		_playerInput = GetComponent<PlayerInput>();
+		
+		_inputActionAsset = _playerInput.actions;
+	}
+
+	private void OnEnable()
+	{
+		_inputActionAsset[PlayerPrefix + "Move"].performed += OnMove;
+		_inputActionAsset[PlayerPrefix + "Move"].canceled += OnMove;
+		_inputActionAsset[PlayerPrefix + "Fire"].performed += OnFire;
+		_inputActionAsset[PlayerPrefix + "Fire"].canceled += OnFire;
+	}
+
+	private void OnDisable()
+	{
+		_inputActionAsset[PlayerPrefix + "Move"].performed -= OnMove;
+		_inputActionAsset[PlayerPrefix + "Move"].canceled -= OnMove;
+		_inputActionAsset[PlayerPrefix + "Fire"].performed -= OnFire;
+		_inputActionAsset[PlayerPrefix + "Fire"].canceled -= OnFire;
+	}
 
 	private void Update()
 	{
 		Dictionary<Key, KeyCode> map = isPlayer1 ? Keys.Player1Keys : Keys.Player2Keys;
 
-		UpdateMovement();
+		UpdateMovement(_moveDir);
 
-		if(Input.GetKeyDown(map[Key.Fire]))
+		if (Input.GetKeyDown(map[Key.Fire]))
 		{
-			GameManager.Instance.Fire(this);
 		}
 	}
 
-	private void UpdateMovement()
+	private void UpdateMovement(Vector2 dir)
 	{
-		Dictionary<Key, KeyCode> map = isPlayer1 ? Keys.Player1Keys : Keys.Player2Keys;
+		if (dir == Vector2.zero) return;
+		transform.position += (Vector3)(dir * moveSpeed * Time.deltaTime);
 
-		int x = 0;
-		int y = 0;
+		Facing = GetFacingFromInput(dir);
 
-		if (Input.GetKey(map[Key.Left])) x -= 1;
-		if (Input.GetKey(map[Key.Right])) x += 1;
-		if (Input.GetKey(map[Key.Down])) y -= 1;
-		if (Input.GetKey(map[Key.Up])) y += 1;
-
-		Vector2 input = new Vector2(x, y);
-
-		Vector2 move = input;
-		if (normalizeDiagonal && move.sqrMagnitude > 1f)
-			move = move.normalized;
-
-		if (move != Vector2.zero)
-		{
-			transform.position += (Vector3)(move * moveSpeed * Time.deltaTime);
-
-			Facing = GetFacingFromInput(input);
-
-			LastMoveDir = move.normalized;
-		}
+		LastMoveDir = dir.normalized;
 	}
 
 	public void ReceiveDamage(int damage)
@@ -92,5 +103,16 @@ public class PlayerController : MonoBehaviour
 		if (x < 0 && y == 0) return FacingDirection.Left;
 		// x < 0 && y > 0
 		return FacingDirection.UpLeft;
+	}
+
+	public void OnMove(InputAction.CallbackContext ctx)
+	{
+		Debug.Log("OnMove");
+		_moveDir = ctx.ReadValue<Vector2>();
+	}
+
+	public void OnFire(InputAction.CallbackContext context)
+	{
+		GameManager.Instance.Fire(this);
 	}
 }

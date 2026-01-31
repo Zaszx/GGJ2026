@@ -1,6 +1,8 @@
+using System;
 using UnityEngine;
 using System.Collections.Generic;
 
+[Obsolete]
 public enum Key
 {
     Up,
@@ -10,7 +12,7 @@ public enum Key
     Fire,
     Dash
 }
-
+[Obsolete]
 public static class Keys
 {
     public static Dictionary<Key, KeyCode> Player1Keys = new Dictionary<Key, KeyCode>()
@@ -30,6 +32,6 @@ public static class Keys
 		{ Key.Left, KeyCode.LeftArrow },
 		{ Key.Right, KeyCode.RightArrow },
 		{ Key.Dash, KeyCode.RightShift },
-		{ Key.Fire, KeyCode.KeypadEnter },
+		{ Key.Fire, KeyCode.Return },
 	};
 }

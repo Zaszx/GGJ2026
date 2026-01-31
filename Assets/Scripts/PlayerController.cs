@@ -60,13 +60,7 @@ public class PlayerController : MonoBehaviour
 
 	private void Update()
 	{
-		Dictionary<Key, KeyCode> map = isPlayer1 ? Keys.Player1Keys : Keys.Player2Keys;
-
 		UpdateMovement(_moveDir);
-
-		if (Input.GetKeyDown(map[Key.Fire]))
-		{
-		}
 	}
 
 	private void UpdateMovement(Vector2 dir)

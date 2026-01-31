@@ -137,33 +137,6 @@ public class PlayerController : MonoBehaviour
 		}
 	}
 
-	private void UpdateMovement(Vector2 dir)
-	{
-		_rb.linearVelocity = (dir * moveSpeed);
-
-		Facing = GetFacingFromInput(dir);
-
-		LastMoveDir = dir;
-	}
-
-	public void ReceiveDamage(int damage)
-	{
-		health = health - damage;
-		if (health <= 0)
-		{
-			case false:
-				UpdateMovement(_moveDir);
-				break;
-			case true:
-				if (_rb.linearVelocity.magnitude < 0.1f)
-				{
-					_isKnockedBack = false;
-					_rb.linearVelocity = Vector2.zero;
-				}
-				break;
-		}
-	}
-
 	
     private Vector2 externalVelocity;
 

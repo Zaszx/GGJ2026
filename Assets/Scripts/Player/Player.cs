@@ -42,13 +42,13 @@ public class Player : MonoBehaviour
 
             var crown = new MaskPiece();
             crown.type = MaskPieceType.Crown;
-            crown.element = Element.Air;
+            crown.element = Element.Fire;
             var face = new MaskPiece();
             face.type = MaskPieceType.Face;
             face.element = Element.Air;
             var teeth = new MaskPiece();
             teeth.type = MaskPieceType.Teeth;
-            teeth.element = Element.Air;
+            teeth.element = Element.Fire;
 
             player1Mask = new ShamanMask(crown, face, teeth);
 

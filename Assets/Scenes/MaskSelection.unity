@@ -418,21 +418,15 @@ MonoBehaviour:
   topSelector: {fileID: 4343206960717251811}
   midSelector: {fileID: 1289101203}
   bottomSelector: {fileID: 1448714945}
-  topSprites:
-  - {fileID: -6459839099861944798, guid: f8063b449d38cb941bc5893019f49d23, type: 3}
-  - {fileID: 8521695462319253656, guid: f8063b449d38cb941bc5893019f49d23, type: 3}
-  - {fileID: -8671526641955225515, guid: f8063b449d38cb941bc5893019f49d23, type: 3}
-  - {fileID: 3814684173394104852, guid: f8063b449d38cb941bc5893019f49d23, type: 3}
-  midSprites:
-  - {fileID: -6459839099861944798, guid: f8063b449d38cb941bc5893019f49d23, type: 3}
-  - {fileID: 8521695462319253656, guid: f8063b449d38cb941bc5893019f49d23, type: 3}
-  - {fileID: -8671526641955225515, guid: f8063b449d38cb941bc5893019f49d23, type: 3}
-  - {fileID: 3814684173394104852, guid: f8063b449d38cb941bc5893019f49d23, type: 3}
-  bottomSprites:
-  - {fileID: -6459839099861944798, guid: f8063b449d38cb941bc5893019f49d23, type: 3}
-  - {fileID: 8521695462319253656, guid: f8063b449d38cb941bc5893019f49d23, type: 3}
-  - {fileID: -8671526641955225515, guid: f8063b449d38cb941bc5893019f49d23, type: 3}
-  - {fileID: 3814684173394104852, guid: f8063b449d38cb941bc5893019f49d23, type: 3}
+  topPiece:
+    type: 2
+    element: 0
+  midPiece:
+    type: 0
+    element: 0
+  bottomPiece:
+    type: 1
+    element: 0
 --- !u!1 &1123986895
 GameObject:
   m_ObjectHideFlags: 0
@@ -1068,6 +1062,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea1c98e02e5d9b44699e00b94a21336a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MaskPartSelector
+--- !u!1 &1563339777
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1563339779}
+  - component: {fileID: 1563339778}
+  m_Layer: 0
+  m_Name: SpriteLoader
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1563339778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1563339777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b586505808843746a34675f82bea1d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpriteLoader
+--- !u!4 &1563339779
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1563339777}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 890.5383, y: 627.01056, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1894158184
 GameObject:
   m_ObjectHideFlags: 0
@@ -1367,3 +1405,4 @@ SceneRoots:
   - {fileID: 1171478017}
   - {fileID: 1924340781}
   - {fileID: 1894158187}
+  - {fileID: 1563339779}

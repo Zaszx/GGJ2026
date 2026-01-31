@@ -6,21 +6,21 @@ public class MaskSelector : MonoBehaviour
 {
 	public TMP_Text titleText;
 
-    public MaskPartSelector topSelector;
-    public MaskPartSelector midSelector;
-	public MaskPartSelector bottomSelector;
+    public MaskPartSelector topSelector;	//Crown
+    public MaskPartSelector midSelector;	//Face
+	public MaskPartSelector bottomSelector;	//Teeth
 
 	bool playerOneTurn = true;
 
-	public Sprite[] topSprites;
-	public Sprite[] midSprites;
-	public Sprite[] bottomSprites;
+	public MaskPiece topPiece;
+	public MaskPiece midPiece;
+	public MaskPiece bottomPiece;
 
 	private void Start()
 	{
-		topSelector.Init(topSprites);
-		midSelector.Init(midSprites);
-		bottomSelector.Init(bottomSprites);
+		topSelector.Init(topPiece);
+		midSelector.Init(midPiece);
+		bottomSelector.Init(bottomPiece);
 
 		titleText.text = "Player 1's turn\nPlayer 2, look the fuck away!";
 	}
@@ -36,9 +36,13 @@ public class MaskSelector : MonoBehaviour
 			PlayerMaskSelections.Player1Mid = midSelector.GetSelectedIndex();
 			PlayerMaskSelections.Player1Bottom = bottomSelector.GetSelectedIndex();
 
-			topSelector.Init(topSprites);
-			midSelector.Init(midSprites);
-			bottomSelector.Init(bottomSprites);
+			ShamanMask p1Mask = new(topSelector.GetMaskPiece(), midSelector.GetMaskPiece(), bottomSelector.GetMaskPiece());
+
+			PlayerMaskSelections.Player1Mask = p1Mask;
+
+			topSelector.Init(topPiece);
+			midSelector.Init(midPiece);
+			bottomSelector.Init(bottomPiece);
 		}
 		else
 		{
@@ -46,7 +50,11 @@ public class MaskSelector : MonoBehaviour
 			PlayerMaskSelections.Player2Mid = midSelector.GetSelectedIndex();
 			PlayerMaskSelections.Player2Bottom = bottomSelector.GetSelectedIndex();
 
-			SceneManager.LoadScene("Arena");
+            ShamanMask p2Mask = new(topSelector.GetMaskPiece(), midSelector.GetMaskPiece(), bottomSelector.GetMaskPiece());
+
+            PlayerMaskSelections.Player1Mask = p2Mask;
+
+            SceneManager.LoadScene("Arena");
 		}
 	}
 }

@@ -10,5 +10,7 @@ public static class PlayerMaskSelections
 	public static int Player2Mid;
 	public static int Player2Bottom;
 
+	public static ShamanMask Player1Mask;
+    public static ShamanMask Player2Mask;
 
 }

@@ -1,6 +1,12 @@
 ﻿using NUnit.Framework;
 using UnityEngine;
 
+
+public enum PlayerSelect
+{
+    Player1,
+    Player2
+}
 public class Player : MonoBehaviour
 {
     [SerializeField] PlayerStats stats;
@@ -13,7 +19,15 @@ public class Player : MonoBehaviour
     {
         Foo();
 
-        ShamanMask playerMask = PlayerMaskSelections.Player1Mask;
+        ShamanMask playerMask;
+        if(stats.PlayerSelection == PlayerSelect.Player1)
+        {
+            playerMask = PlayerMaskSelections.Player1Mask;
+        }
+        else
+        {
+            playerMask = PlayerMaskSelections.Player2Mask;
+        }
         if (playerMask is null) //Hata varsa diye, oyunu bozmamak adına, normalde silinebilir
         {
             Debug.LogWarning("YOU LOADED FROM SOMEWHERE ELSE, LOAD FROM MASK SELECTION.");

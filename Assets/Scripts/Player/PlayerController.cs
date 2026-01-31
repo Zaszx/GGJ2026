@@ -1,4 +1,5 @@
-using System.Collections.Generic;
+using System;
+using UI;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -35,11 +36,13 @@ public class PlayerController : MonoBehaviour
 	private InputActionAsset _inputActionAsset;
 	private Vector2 _moveDir;
 	private string PlayerPrefix => isPlayer1 ? "1" : "2";
+	private HeavyAttackLoading _heavyAttackLoadingBar;
 
 	private void Awake()
 	{
 		_rb = GetComponent<Rigidbody2D>();
 		_playerInput = GetComponent<PlayerInput>();
+		_heavyAttackLoadingBar = GetComponentInChildren<HeavyAttackLoading>();
 		
 		_inputActionAsset = _playerInput.actions;
 	}
@@ -58,6 +61,38 @@ public class PlayerController : MonoBehaviour
 		_inputActionAsset[PlayerPrefix + "Move"].canceled -= OnMove;
 		_inputActionAsset[PlayerPrefix + "Fire"].performed -= OnFire;
 		_inputActionAsset[PlayerPrefix + "Fire"].canceled -= OnFire;
+	}
+
+	private float _heavyAttackProgress;
+	private bool _isHoldingFire;
+	private bool _attackLock;
+	[SerializeField] private float heavyAttackLoadDuration = 2f;
+	private void Update()
+	{
+		if (_isHoldingFire)
+		{
+			_attackLock = false;
+			_heavyAttackProgress += Time.deltaTime / heavyAttackLoadDuration;
+			_heavyAttackLoadingBar.SetProgress(_heavyAttackProgress);
+			if (_heavyAttackProgress >= 1f)
+			{
+				//Heavy Attack
+				Debug.Log("Heavy Attack");
+				_heavyAttackProgress = 0f;
+				_heavyAttackLoadingBar.ResetBar();
+			}
+		}
+		else
+		{
+			if (!_attackLock)
+			{
+				Debug.Log("Normal Attack");
+				_attackLock = true;
+			}
+
+			_heavyAttackProgress = 0f;
+			_heavyAttackLoadingBar.ResetBar();
+		}
 	}
 
 	private void FixedUpdate()
@@ -110,8 +145,12 @@ public class PlayerController : MonoBehaviour
 	{
 		if (ctx.canceled)
 		{
+			_isHoldingFire = false;
 			return;
 		}
-		GameManager.Instance.Fire(this);
+		_isHoldingFire = true;
+		
+		// GameManager.Instance.Fire(this);
 	}
+
 }

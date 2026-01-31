@@ -164,6 +164,7 @@ public class PlayerController : MonoBehaviour
 		}
 	}
 
+	
     private Vector2 externalVelocity;
 
     private void UpdateMovement(Vector2 dir)

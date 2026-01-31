@@ -21,6 +21,7 @@ public class PlayerController : MonoBehaviour
 	[SerializeField] private bool isPlayer1 = true;
 	[SerializeField] private int health = 100;
 	private Rigidbody2D _rb;
+	private SkillController _skillController;
 
 	[Header("Movement")]
 	[SerializeField] private float moveSpeed = 5f;
@@ -40,6 +41,7 @@ public class PlayerController : MonoBehaviour
 
 	private void Awake()
 	{
+		_skillController = GetComponent<SkillController>();
 		_rb = GetComponent<Rigidbody2D>();
 		_playerInput = GetComponent<PlayerInput>();
 		_heavyAttackLoadingBar = GetComponentInChildren<HeavyAttackLoading>();
@@ -65,33 +67,43 @@ public class PlayerController : MonoBehaviour
 
 	private float _heavyAttackProgress;
 	private bool _isHoldingFire;
-	private bool _attackLock;
+	private bool _attackLock = true;
 	[SerializeField] private float heavyAttackLoadDuration = 2f;
 	private void Update()
 	{
-		if (_isHoldingFire)
+		CheckAttack();
+		return;
+
+		void CheckAttack()
 		{
-			_attackLock = false;
-			_heavyAttackProgress += Time.deltaTime / heavyAttackLoadDuration;
-			_heavyAttackLoadingBar.SetProgress(_heavyAttackProgress);
-			if (_heavyAttackProgress >= 1f)
+			if (_isHoldingFire)
 			{
-				//Heavy Attack
-				Debug.Log("Heavy Attack");
+				_attackLock = false;
+				_heavyAttackProgress += Time.deltaTime / heavyAttackLoadDuration;
+				_heavyAttackLoadingBar.SetProgress(_heavyAttackProgress);
+			}
+			else
+			{
+				switch (_attackLock)
+				{
+					case false when _heavyAttackProgress >= 1f:
+						// Heavy Attack
+						Debug.Log("Heavy Attack");
+						_skillController.UseSkill(SkillSlot.Ulti);
+						_attackLock = true;
+						_heavyAttackProgress = 0f;
+						_heavyAttackLoadingBar.ResetBar();
+						break;
+					case false:
+						Debug.Log("Normal Attack");
+						_skillController.UseSkill(SkillSlot.BasicAttack);
+						_attackLock = true;
+						break;
+				}
+
 				_heavyAttackProgress = 0f;
 				_heavyAttackLoadingBar.ResetBar();
 			}
-		}
-		else
-		{
-			if (!_attackLock)
-			{
-				Debug.Log("Normal Attack");
-				_attackLock = true;
-			}
-
-			_heavyAttackProgress = 0f;
-			_heavyAttackLoadingBar.ResetBar();
 		}
 	}
 
@@ -150,7 +162,6 @@ public class PlayerController : MonoBehaviour
 		}
 		_isHoldingFire = true;
 		
-		GameManager.Instance.Fire(this);
 	}
 
 }

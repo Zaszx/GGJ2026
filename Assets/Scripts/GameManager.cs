@@ -4,12 +4,14 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
 
-    [SerializeField] private PlayerController Player1;
-	[SerializeField] private PlayerController Player2;
+    private PlayerController _player1;
+	private PlayerController _player2;
 
 	private void Awake()
 	{
         Instance = this;
+        _player1 = GameObject.FindWithTag("Player1").GetComponent<PlayerController>();
+        _player2 = GameObject.FindWithTag("Player2").GetComponent<PlayerController>();
 	}
 
 	void Start()
@@ -24,7 +26,7 @@ public class GameManager : MonoBehaviour
 
     public void Fire(PlayerController firingPlayer)
 	{
-        PlayerController targetPlayer = firingPlayer == Player1 ? Player2 : Player1;
+        PlayerController targetPlayer = firingPlayer == _player1 ? _player2 : _player1;
 
         Vector3 direction = (targetPlayer.transform.position - firingPlayer.transform.position).normalized;
 

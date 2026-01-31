@@ -150,7 +150,7 @@ public class PlayerController : MonoBehaviour
 		}
 		_isHoldingFire = true;
 		
-		// GameManager.Instance.Fire(this);
+		GameManager.Instance.Fire(this);
 	}
 
 }

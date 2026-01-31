@@ -18,6 +18,10 @@ public static class MaskSkillFactory
         var basic = CreateBasicSkill(mask.teeth.element);
         ApplySynergy(basic, mask.face.element, mask.teeth.element);
         skills.Add(basic);
+        // -> heavy
+        var heavy = CreateBasicSkill(mask.teeth.element);
+        ApplySynergy(basic, mask.face.element, mask.teeth.element);
+        skills.Add(heavy);
 
         // CROWN → defensive
         var def = CreateDefensiveSkill(mask.crown.element);
@@ -57,7 +61,7 @@ public static class MaskSkillFactory
         {
             Element.Air =>      new ExampleBasicAttack(),
             Element.Water =>    new WaterBasicAttack(Prefabs.WaterSweepAttack),
-            Element.Fire =>     new FireBasicAttack(Prefabs.Projectile),
+            Element.Fire =>     new ExampleBasicAttack(), //FireBasicAttack(Prefabs.Projectile),
             Element.Earth =>    new ExampleBasicAttack(),
             _ => new ExampleBasicAttack(),
         };

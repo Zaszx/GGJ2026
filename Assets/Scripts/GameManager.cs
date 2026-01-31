@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour
 	private void Awake()
 	{
         Instance = this;
+        _player1 = GameObject.FindWithTag("Player1").GetComponent<PlayerController>();
+        _player2 = GameObject.FindWithTag("Player2").GetComponent<PlayerController>();
 	}
 
 	void Start()

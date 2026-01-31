@@ -14,7 +14,7 @@ public class Player : MonoBehaviour
         foo();
 
         ShamanMask playerMask = PlayerMaskSelections.Player1Mask;
-        if (playerMask is null)
+        if (playerMask is null) //Hata varsa diye, oyunu bozmamak adına, normalde silinebilir
         {
             Debug.LogWarning("YOU LOADED FROM SOMEWHERE ELSE, LOAD FROM MASK SELECTION.");
 

@@ -3,7 +3,7 @@ using System.Diagnostics;
 using UnityEngine.UI;
 
 public static class MaskSkillFactory
-{  
+{
     public static List<SkillInstance> CreateSkills(ShamanMask mask)
     {
         var skills = new List<SkillInstance>();
@@ -39,18 +39,43 @@ public static class MaskSkillFactory
     }
     static SkillInstance CreateUltiSkill(Element element)
     {
-        return new SkillInstance(new ExampleUlti());
+        ISkill skill = element switch
+        {
+            Element.Fire =>  new ExampleUlti(),
+            Element.Water => new ExampleUlti(),
+            Element.Air =>   new ExampleUlti(),
+            Element.Earth => new ExampleUlti(),
+            _ => new ExampleUlti()
+        };
+
+        return new SkillInstance(skill);
     }
+
     static SkillInstance CreateBasicSkill(Element element)
     {
-        // mesela
-        //if(element is Element.Fire)
-        //return new SkillInstance(new FireBasicAttack());
-        //else ...
-        return new SkillInstance(new ExampleBasicAttack());
+        ISkill skill = element switch
+        {
+            Element.Air =>      new ExampleBasicAttack(),
+            Element.Water =>    new ExampleBasicAttack(),
+            Element.Fire =>     new FireBasicAttack(Prefabs.Projectile),
+            Element.Earth =>    new ExampleBasicAttack(),
+            _ => new ExampleBasicAttack(),
+        };
+        return new SkillInstance(skill);
     }
+
     static SkillInstance CreateDefensiveSkill(Element element)
     {
-        return new SkillInstance(new ExampleDefensive());
+        ISkill skill = element switch
+        {
+            Element.Fire =>     new ExampleDefensive(),
+            Element.Water =>    new ExampleDefensive(),
+            Element.Air =>      new ExampleDefensive(),
+            Element.Earth =>    new ExampleDefensive(),
+            _ => new ExampleDefensive()
+        };
+
+        return new SkillInstance(skill);
     }
+
 }

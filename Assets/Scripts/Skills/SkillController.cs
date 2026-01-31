@@ -14,7 +14,8 @@ public class SkillController : MonoBehaviour
     {
         skills.Add(SkillSlot.Ulti, newSkills[0]);
         skills.Add(SkillSlot.BasicAttack, newSkills[1]);
-        skills.Add(SkillSlot.Defensive, newSkills[2]);
+        skills.Add(SkillSlot.HeavyAttack, newSkills[2]);
+        skills.Add(SkillSlot.Defensive, newSkills[3]);
     }
 
     public void UseSkill(SkillSlot slot)
@@ -28,6 +29,7 @@ public enum SkillSlot
 {
     None,
     BasicAttack,
+    HeavyAttack,
     Defensive,
     Ulti
 }

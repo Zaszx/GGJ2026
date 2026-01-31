@@ -11,7 +11,7 @@ public class Player : MonoBehaviour
 
     private void Start()
     {
-        foo();
+        Foo();
 
         ShamanMask playerMask = PlayerMaskSelections.Player1Mask;
         if (playerMask is null) //Hata varsa diye, oyunu bozmamak adına, normalde silinebilir
@@ -34,12 +34,12 @@ public class Player : MonoBehaviour
         var skills = MaskSkillFactory.CreateSkills(playerMask);
         playerSkillController.SetSkills(skills);
 
-        playerSkillController.UseSkill(SkillSlot.BasicAttack);
-        playerSkillController.UseSkill(SkillSlot.Defensive);
-        playerSkillController.UseSkill(SkillSlot.Ulti);
+        // playerSkillController.UseSkill(SkillSlot.BasicAttack);
+        // playerSkillController.UseSkill(SkillSlot.Defensive);
+        // playerSkillController.UseSkill(SkillSlot.Ulti);
     }
 
-    public void foo()
+    private void Foo()
     {
         Debug.Log("Bar " + PlayerName);
         Debug.Log(PlayerName + " is using a skill now");

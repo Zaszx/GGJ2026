@@ -1,5 +1,5 @@
 ﻿public interface ISkill
 {
-    CooldownType CooldownType { get; }
+    static CooldownType CooldownType { get; }
     void Use(Player user);
 }

@@ -18,6 +18,10 @@ public static class MaskSkillFactory
         var basic = CreateBasicSkill(mask.teeth.element);
         ApplySynergy(basic, mask.face.element, mask.teeth.element);
         skills.Add(basic);
+        // -> heavy
+        var heavy = CreateBasicSkill(mask.teeth.element);
+        ApplySynergy(basic, mask.face.element, mask.teeth.element);
+        skills.Add(heavy);
 
         // CROWN → defensive
         var def = CreateDefensiveSkill(mask.crown.element);

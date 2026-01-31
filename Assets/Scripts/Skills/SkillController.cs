@@ -3,7 +3,6 @@ using UnityEngine;
 
 public class SkillController : MonoBehaviour
 {
-    /*
     Dictionary<SkillSlot, SkillInstance> skills;
 
     public void SetSkills(List<SkillInstance> newSkills)
@@ -15,5 +14,13 @@ public class SkillController : MonoBehaviour
     {
         skills[slot].Use(GetComponent<Player>());
     }
-    */
+    
+}
+
+public enum SkillSlot
+{
+    None,
+    Attack,
+    Defensive,
+    Ulti
 }

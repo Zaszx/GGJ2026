@@ -4,8 +4,8 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
 
-    [SerializeField] private PlayerController Player1;
-	[SerializeField] private PlayerController Player2;
+    [SerializeField] private Player Player1;
+	[SerializeField] private Player Player2;
 
 	private void Awake()
 	{
@@ -24,15 +24,27 @@ public class GameManager : MonoBehaviour
 
     public void Fire(PlayerController firingPlayer)
 	{
-        PlayerController targetPlayer = firingPlayer == Player1 ? Player2 : Player1;
+        Fire(firingPlayer.GetComponent<Player>());
+	}
 
-        Vector3 direction = (targetPlayer.transform.position - firingPlayer.transform.position).normalized;
+    public void Fire(Player firingPlayer)
+	{
+		Vector3 direction = GetFiringDirectionForPlayer(firingPlayer);
 
-        Projectile firedProjectile = Instantiate(Prefabs.Projectile).GetComponent<Projectile>();
-        firedProjectile.transform.position = firingPlayer.transform.position + direction;
-        firedProjectile.transform.right = direction;
+		Projectile firedProjectile = Instantiate(Prefabs.Projectile).GetComponent<Projectile>();
+		firedProjectile.transform.position = firingPlayer.transform.position + direction;
+		firedProjectile.transform.right = direction;
 
-        firedProjectile.Init(direction);
+		firedProjectile.Init(direction);
+	}
+
+	public Vector2 GetFiringDirectionForPlayer(Player firingPlayer)
+	{
+		Player targetPlayer = firingPlayer == Player1 ? Player2 : Player1;
+
+		Vector2 direction = (targetPlayer.transform.position - firingPlayer.transform.position).normalized;
+
+		return direction;
 	}
 
     public void OnPlayerDeath(PlayerController deadPlayer)

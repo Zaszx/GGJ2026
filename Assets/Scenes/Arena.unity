@@ -176,6 +176,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48f9ad078f3502d428c106d9765ef638, type: 3}
+--- !u!114 &312698219 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 872617798607668525, guid: 48f9ad078f3502d428c106d9765ef638, type: 3}
+  m_PrefabInstance: {fileID: 312698218}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffef06f4d79a8a841826b5af9779acc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Player
 --- !u!1 &563542161
 GameObject:
   m_ObjectHideFlags: 0
@@ -326,8 +337,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b879a9ce38fbfa4f8821dd14a9e8d62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
-  Player1: {fileID: 962622306}
-  Player2: {fileID: 1136950464}
+  Player1: {fileID: 312698219}
+  Player2: {fileID: 1742125087}
 --- !u!1 &962622303
 GameObject:
   m_ObjectHideFlags: 0
@@ -437,6 +448,7 @@ MonoBehaviour:
   health: 100
   moveSpeed: 5
   normalizeDiagonal: 1
+  heavyAttackLoadDuration: 2
 --- !u!50 &962622307
 Rigidbody2D:
   serializedVersion: 5
@@ -609,6 +621,7 @@ MonoBehaviour:
   health: 100
   moveSpeed: 5
   normalizeDiagonal: 1
+  heavyAttackLoadDuration: 2
 --- !u!58 &1136950465
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -835,6 +848,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48f9ad078f3502d428c106d9765ef638, type: 3}
+--- !u!114 &1742125087 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 872617798607668525, guid: 48f9ad078f3502d428c106d9765ef638, type: 3}
+  m_PrefabInstance: {fileID: 1742125086}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffef06f4d79a8a841826b5af9779acc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Player
 --- !u!1 &1850602658
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Diagnostics;
+using Skills.BasicAttackSkills;
 using UnityEngine.UI;
 
 public static class MaskSkillFactory
@@ -59,7 +60,7 @@ public static class MaskSkillFactory
     {
         ISkill skill = element switch
         {
-            Element.Air =>      new ExampleBasicAttack(),
+            Element.Air =>      new AirBasicAttack(),
             Element.Water =>    new WaterBasicAttack(Prefabs.WaterSweepAttack),
             Element.Fire =>     new FireBasicAttackSkill(Prefabs.Fireball),
             Element.Earth =>    new ExampleBasicAttack(),
@@ -85,7 +86,7 @@ public static class MaskSkillFactory
     {
         ISkill skill = element switch
         {
-            Element.Fire =>     new ExampleDefensive(),
+            Element.Fire =>     new FireDefensiveSkill(Prefabs.FirePit),
             Element.Water =>    new WaterDefensiveSkill(Prefabs.WaterBarrier),
             Element.Air =>      new ExampleDefensive(),
             Element.Earth =>    new ExampleDefensive(),

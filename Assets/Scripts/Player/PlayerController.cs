@@ -38,12 +38,13 @@ public class PlayerController : MonoBehaviour
 	private PlayerInput _playerInput;
 	private InputActionAsset _inputActionAsset;
 	private Vector2 _moveDir;
-	private string PlayerPrefix => isPlayer1 ? "1" : "2";
+	public static string PlayerPrefix;
 	private HeavyAttackLoading _heavyAttackLoadingBar;
 	private bool _isOnCooldown;
 
 	private void Awake()
 	{
+		PlayerPrefix = isPlayer1 ? "1" : "2";
 		_skillController = GetComponent<SkillController>();
 		_rb = GetComponent<Rigidbody2D>();
 		_playerInput = GetComponent<PlayerInput>();
@@ -117,13 +118,27 @@ public class PlayerController : MonoBehaviour
 			}
 		}
 	}
+	
+	//İki knockback yöntemini de tutuyorum isteyen istediğini kullansın -T
+	private void FixedUpdate()
+	{
+		switch (_isKnockedBack)
+		{
+			case false:
+				UpdateMovement(_moveDir);
+				break;
+			case true:
+				if (_rb.linearVelocity.magnitude < 0.1f)
+				{
+					_isKnockedBack = false;
+					_rb.linearVelocity = Vector2.zero;
+				}
+				break;
+		}
+	}
 
+	
     private Vector2 externalVelocity;
-
-    private void FixedUpdate()
-    {
-        UpdateMovement(_moveDir);
-    }
 
     private void UpdateMovement(Vector2 dir)
     {
@@ -206,5 +221,13 @@ public class PlayerController : MonoBehaviour
 			return;
 		}
 		StartCoroutine(SkillCooldown(_skillController.UseSkill(SkillSlot.Defensive)));
+	}
+	private bool _isKnockedBack;
+	public void ApplyKnockback(Vector2 direction, float force, string sourceTag)
+	{
+		if (CompareTag(sourceTag)) return;
+		_isKnockedBack = true;
+		_rb.AddForce(direction * force, ForceMode2D.Impulse);
+		
 	}
 }

@@ -19,7 +19,6 @@ public class Player : MonoBehaviour
 
     private void Start()
     {
-        Foo();
         currentHealth = stats.MaxHp;
 
         ShamanMask player1Mask;
@@ -38,38 +37,31 @@ public class Player : MonoBehaviour
             var skills = MaskSkillFactory.CreateSkills(player2Mask);
             playerSkillController.SetSkills(skills);
         }
-        else
+        else //no masks
         {
 
             var crown = new MaskPiece();
             crown.type = MaskPieceType.Crown;
-            crown.element = Element.Air;
+            crown.element = Element.Fire;
             var face = new MaskPiece();
             face.type = MaskPieceType.Face;
             face.element = Element.Air;
             var teeth = new MaskPiece();
             teeth.type = MaskPieceType.Teeth;
-            teeth.element = Element.Air;
+            teeth.element = Element.Fire;
 
             player1Mask = new ShamanMask(crown, face, teeth);
 
             var skills = MaskSkillFactory.CreateSkills(player1Mask);
             playerSkillController.SetSkills(skills);
         }
-        Debug.Log(PlayerMaskSelections.Player1Mask.face.GetHashCode());
-        Debug.Log(PlayerMaskSelections.Player2Mask.face.GetHashCode());
-
         // playerSkillController.UseSkill(SkillSlot.BasicAttack);
         // playerSkillController.UseSkill(SkillSlot.Defensive);
         // playerSkillController.UseSkill(SkillSlot.Ulti);
     }
 
-    private void Foo()
-    {
-        Debug.Log("Bar " + PlayerName);
-        Debug.Log(PlayerName + " is using a skill now");
-    }
-	public void ReceiveDamage(int damage)
+
+	public void ReceiveDamage(float damage)
 	{
         currentHealth = currentHealth - damage;
 		if (currentHealth <= 0)

@@ -12,9 +12,10 @@ public static class Prefabs
 	{
 		Projectile = Resources.Load<GameObject>("Prefabs/Projectile");
         Fireball = Resources.Load<GameObject>("Prefabs/FireBall");
+
+        WaterSweepAttack = Resources.Load<GameObject>("Prefabs/WaterSweepAttack");
+        WaterLanceAttack = Resources.Load<GameObject>("Prefabs/WaterLanceAttack");
+        WaterBarrier = Resources.Load<GameObject>("Prefabs/WaterBarrier");
     }
-		WaterSweepAttack = Resources.Load<GameObject>("Prefabs/WaterSweepAttack");
-		WaterLanceAttack = Resources.Load<GameObject>("Prefabs/WaterLanceAttack");
-		WaterBarrier = Resources.Load<GameObject>("Prefabs/WaterBarrier");
-	}
+	
 }

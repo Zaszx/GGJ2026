@@ -60,10 +60,8 @@ public static class MaskSkillFactory
         ISkill skill = element switch
         {
             Element.Air =>      new ExampleBasicAttack(),
-            Element.Water =>    new ExampleBasicAttack(),
-            Element.Fire =>     new FireBasicAttackSkill(Prefabs.Fireball),
             Element.Water =>    new WaterBasicAttack(Prefabs.WaterSweepAttack),
-            Element.Fire =>     new FireBasicAttackSkill(Prefabs.Projectile),
+            Element.Fire =>     new FireBasicAttackSkill(Prefabs.Fireball),
             Element.Earth =>    new ExampleBasicAttack(),
             _ => new ExampleBasicAttack(),
         };

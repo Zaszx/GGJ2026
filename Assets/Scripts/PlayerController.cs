@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour
 	[Header("Player")]
 	[SerializeField] private bool isPlayer1 = true;
 	[SerializeField] private int health = 100;
+	private Rigidbody2D _rb;
 
 	[Header("Movement")]
 	[SerializeField] private float moveSpeed = 5f;
@@ -37,6 +38,7 @@ public class PlayerController : MonoBehaviour
 
 	private void Awake()
 	{
+		_rb = GetComponent<Rigidbody2D>();
 		_playerInput = GetComponent<PlayerInput>();
 		
 		_inputActionAsset = _playerInput.actions;
@@ -58,19 +60,18 @@ public class PlayerController : MonoBehaviour
 		_inputActionAsset[PlayerPrefix + "Fire"].canceled -= OnFire;
 	}
 
-	private void Update()
+	private void FixedUpdate()
 	{
 		UpdateMovement(_moveDir);
 	}
 
 	private void UpdateMovement(Vector2 dir)
 	{
-		if (dir == Vector2.zero) return;
-		transform.position += (Vector3)(dir * moveSpeed * Time.deltaTime);
+		_rb.linearVelocity = (dir * moveSpeed);
 
 		Facing = GetFacingFromInput(dir);
 
-		LastMoveDir = dir.normalized;
+		LastMoveDir = dir;
 	}
 
 	public void ReceiveDamage(int damage)

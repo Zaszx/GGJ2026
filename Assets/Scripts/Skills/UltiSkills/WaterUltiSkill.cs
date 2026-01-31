@@ -15,7 +15,7 @@ public class WaterUltiSkill : ISkill
 	{
 		if (user == null) return;
 
-		Vector2 dir = GetFiringDirectionForPlayer(user);
+		Vector2 dir = GameManager.Instance.GetFiringDirectionForPlayer(user);
 		if (dir.sqrMagnitude < 0.0001f)
 			dir = Vector2.right;
 
@@ -33,12 +33,5 @@ public class WaterUltiSkill : ISkill
 		}
 
 		proj.Init(user, dir);
-	}
-
-	// Placeholder to keep this snippet self-contained.
-	// Remove this if you already have it elsewhere.
-	private Vector2 GetFiringDirectionForPlayer(Player firingPlayer)
-	{
-		return Vector2.right;
 	}
 }

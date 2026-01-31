@@ -17,7 +17,6 @@ public static class Prefabs
 		WaterBarrier = Resources.Load<GameObject>("Prefabs/WaterBarrier");
 		WaterUlti = Resources.Load<GameObject>("Prefabs/WaterUlti");
 
-
         Fireball = Resources.Load<GameObject>("Prefabs/FireBall");
     }
 	

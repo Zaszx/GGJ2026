@@ -20,7 +20,6 @@ public class PlayerController : MonoBehaviour
 {
 	[Header("Player")]
 	[SerializeField] private bool isPlayer1 = true;
-	[SerializeField] private int health = 100;
 	[SerializeField] private PlayerStats stats;
 	private Rigidbody2D _rb;
 	private SkillController _skillController;

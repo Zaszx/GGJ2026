@@ -11,8 +11,9 @@ public class Player : MonoBehaviour
 {
     [SerializeField] PlayerStats stats;
     [SerializeField] SkillController playerSkillController;
+	[SerializeField] private int health = 100;
 
-    public string PlayerName => stats.PlayerName;
+	public string PlayerName => stats.PlayerName;
 
 
     private void Start()
@@ -66,5 +67,13 @@ public class Player : MonoBehaviour
         Debug.Log("Bar " + PlayerName);
         Debug.Log(PlayerName + " is using a skill now");
     }
+	public void ReceiveDamage(int damage)
+	{
+		health = health - damage;
+		if (health <= 0)
+		{
+			GameManager.Instance.OnPlayerDeath(this);
+		}
+	}
 
 }

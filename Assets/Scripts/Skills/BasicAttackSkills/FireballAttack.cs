@@ -7,6 +7,7 @@ public class FireBasicAttackBehaviour : MonoBehaviour
     [Header("Parameters")]
     [SerializeField] private float damage = 25f;
     [SerializeField] private float explosionRadius = 4f;
+    [SerializeField] private float explosionKnockback = 25f;
     [SerializeField] private float speed = 10f;
     [SerializeField] private float lifeTime = 1f;
 
@@ -54,7 +55,7 @@ public class FireBasicAttackBehaviour : MonoBehaviour
                 Debug.Log("player " + p.PlayerName + " was hit by Explosion");
                 //p.TakeDamage(damage);
                 var dir = (Vector2)((p.transform.position - transform.position).normalized);
-                p.GetComponent<PlayerController>().AddExternalVelocity(dir * 50f);
+                p.GetComponent<PlayerController>().AddExternalVelocity(dir * explosionKnockback);
             }
         }
 

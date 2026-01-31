@@ -8,6 +8,7 @@ public static class Prefabs
 	public static GameObject WaterLanceAttack;
 	public static GameObject WaterBarrier;
 	public static GameObject WaterUlti;
+	public static GameObject AirBasic;
 
 	static Prefabs()
 	{
@@ -19,6 +20,10 @@ public static class Prefabs
 
 
         Fireball = Resources.Load<GameObject>("Prefabs/FireBall");
-    }
+
+
+
+        AirBasic = Resources.Load<GameObject>("Prefabs/AirBasic");
+	}
 	
 }

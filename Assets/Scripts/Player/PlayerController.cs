@@ -89,7 +89,7 @@ public class PlayerController : MonoBehaviour
 					case false when _heavyAttackProgress >= 1f:
 						// Heavy Attack
 						Debug.Log("Heavy Attack");
-						_skillController.UseSkill(SkillSlot.Ulti);
+						_skillController.UseSkill(SkillSlot.HeavyAttack);
 						_attackLock = true;
 						_heavyAttackProgress = 0f;
 						_heavyAttackLoadingBar.ResetBar();

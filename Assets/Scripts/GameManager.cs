@@ -4,14 +4,17 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
 
-    private PlayerController _player1;
-	private PlayerController _player2;
+    [SerializeField] private Player Player1;
+	[SerializeField] private Player Player2;
 
 	private void Awake()
 	{
         Instance = this;
-        _player1 = GameObject.FindWithTag("Player1").GetComponent<PlayerController>();
-        _player2 = GameObject.FindWithTag("Player2").GetComponent<PlayerController>();
+
+		if (Player1 == null)
+			Player1 = GameObject.FindWithTag("Player1").GetComponent<Player>();
+		if (Player2 == null)
+			Player2 = GameObject.FindWithTag("Player2").GetComponent<Player>();
 	}
 
 	void Start()
@@ -26,15 +29,27 @@ public class GameManager : MonoBehaviour
 
     public void Fire(PlayerController firingPlayer)
 	{
-        PlayerController targetPlayer = firingPlayer == _player1 ? _player2 : _player1;
+        Fire(firingPlayer.GetComponent<Player>());
+	}
 
-        Vector3 direction = (targetPlayer.transform.position - firingPlayer.transform.position).normalized;
+    public void Fire(Player firingPlayer)
+	{
+		Vector3 direction = GetFiringDirectionForPlayer(firingPlayer);
 
-        Projectile firedProjectile = Instantiate(Prefabs.Projectile).GetComponent<Projectile>();
-        firedProjectile.transform.position = firingPlayer.transform.position + direction;
-        firedProjectile.transform.right = direction;
+		Projectile firedProjectile = Instantiate(Prefabs.Projectile).GetComponent<Projectile>();
+		firedProjectile.transform.position = firingPlayer.transform.position + direction;
+		firedProjectile.transform.right = direction;
 
-        firedProjectile.Init(direction);
+		firedProjectile.Init(direction);
+	}
+
+	public Vector2 GetFiringDirectionForPlayer(Player firingPlayer)
+	{
+		Player targetPlayer = firingPlayer == Player1 ? Player2 : Player1;
+
+		Vector2 direction = (targetPlayer.transform.position - firingPlayer.transform.position).normalized;
+
+		return direction;
 	}
 
     public void OnPlayerDeath(PlayerController deadPlayer)

@@ -19,7 +19,7 @@ public static class MaskSkillFactory
         ApplySynergy(basic, mask.face.element, mask.teeth.element);
         skills.Add(basic);
         // -> heavy
-        var heavy = CreateBasicSkill(mask.teeth.element);
+        var heavy = CreateHeavySkill(mask.teeth.element);
         ApplySynergy(basic, mask.face.element, mask.teeth.element);
         skills.Add(heavy);
 
@@ -62,18 +62,33 @@ public static class MaskSkillFactory
             Element.Air =>      new ExampleBasicAttack(),
             Element.Water =>    new ExampleBasicAttack(),
             Element.Fire =>     new FireBasicAttackSkill(Prefabs.Fireball),
+            Element.Water =>    new WaterBasicAttack(Prefabs.WaterSweepAttack),
+            Element.Fire =>     new FireBasicAttackSkill(Prefabs.Projectile),
             Element.Earth =>    new ExampleBasicAttack(),
             _ => new ExampleBasicAttack(),
         };
         return new SkillInstance(skill);
     }
 
-    static SkillInstance CreateDefensiveSkill(Element element)
+	static SkillInstance CreateHeavySkill(Element element)
+	{
+		ISkill skill = element switch
+		{
+			Element.Air => new ExampleBasicAttack(),
+			Element.Water => new WaterHeavyAttack(Prefabs.WaterLanceAttack),
+			Element.Fire => new ExampleBasicAttack(),
+			Element.Earth => new ExampleBasicAttack(),
+			_ => new ExampleBasicAttack(),
+		};
+		return new SkillInstance(skill);
+	}
+
+	static SkillInstance CreateDefensiveSkill(Element element)
     {
         ISkill skill = element switch
         {
             Element.Fire =>     new ExampleDefensive(),
-            Element.Water =>    new ExampleDefensive(),
+            Element.Water =>    new WaterDefensiveSkill(Prefabs.WaterBarrier),
             Element.Air =>      new ExampleDefensive(),
             Element.Earth =>    new ExampleDefensive(),
             _ => new ExampleDefensive()

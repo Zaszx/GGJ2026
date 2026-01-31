@@ -21,6 +21,7 @@ public class PlayerController : MonoBehaviour
 	[Header("Player")]
 	[SerializeField] private bool isPlayer1 = true;
 	[SerializeField] private PlayerStats stats;
+	
 	private Rigidbody2D _rb;
 	private SkillController _skillController;
 
@@ -140,15 +141,6 @@ public class PlayerController : MonoBehaviour
     {
         externalVelocity += force;
     }
-
-    public void ReceiveDamage(int damage)
-	{
-		health = health - damage;
-		if (health <= 0)
-		{
-			GameManager.Instance.OnPlayerDeath(this);
-		}
-	}
 
 	private static FacingDirection GetFacingFromInput(Vector2 input)
 	{

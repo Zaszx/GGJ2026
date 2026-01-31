@@ -11,14 +11,16 @@ public class Player : MonoBehaviour
 {
     [SerializeField] PlayerStats stats;
     [SerializeField] SkillController playerSkillController;
-	[SerializeField] private int health = 100;
 
-	public string PlayerName => stats.PlayerName;
+    private float currentHealth;
+
+    public string PlayerName => stats.PlayerName;
 
 
     private void Start()
     {
         Foo();
+        currentHealth = stats.MaxHp;
 
         ShamanMask player1Mask;
         ShamanMask player2Mask;
@@ -69,8 +71,8 @@ public class Player : MonoBehaviour
     }
 	public void ReceiveDamage(int damage)
 	{
-		health = health - damage;
-		if (health <= 0)
+        currentHealth = currentHealth - damage;
+		if (currentHealth <= 0)
 		{
 			GameManager.Instance.OnPlayerDeath(this);
 		}

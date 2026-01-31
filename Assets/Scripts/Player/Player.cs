@@ -8,8 +8,11 @@ public class Player : MonoBehaviour
 
     public string PlayerName => stats.PlayerName;
 
-    private void OnEnable()
+
+    private void Start()
     {
+        foo();
+
         ShamanMask playerMask = PlayerMaskSelections.Player1Mask;
         if (playerMask is null)
         {
@@ -27,13 +30,10 @@ public class Player : MonoBehaviour
 
             playerMask = new ShamanMask(crown, face, teeth);
         }
+
         var skills = MaskSkillFactory.CreateSkills(playerMask);
         playerSkillController.SetSkills(skills);
-    }
 
-    private void Start()
-    {
-        foo();
         playerSkillController.UseSkill(SkillSlot.BasicAttack);
         playerSkillController.UseSkill(SkillSlot.Defensive);
         playerSkillController.UseSkill(SkillSlot.Ulti);

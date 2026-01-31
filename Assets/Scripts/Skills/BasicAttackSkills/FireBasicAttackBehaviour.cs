@@ -6,11 +6,9 @@ public class FireBasicAttackBehaviour : MonoBehaviour
 {
     [Header("Parameters")]
     [SerializeField] private float damage = 25f;
-    [SerializeField] private float range = 10f;
     [SerializeField] private float explosionRadius = 4f;
-    [SerializeField] private float speed = 15f;
-
-    private float distTravelled;
+    [SerializeField] private float speed = 10f;
+    [SerializeField] private float lifeTime = 1f;
 
     [Header("Visuals")]
     [SerializeField] private ParticleSystem flyEffect;
@@ -25,24 +23,41 @@ public class FireBasicAttackBehaviour : MonoBehaviour
         RB.linearVelocity = dir * speed;
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void FixedUpdate()
     {
-        if (true)
+        lifeTime -= Time.deltaTime;
+        if (lifeTime < 0f)
         {
-            PlayExplodeEffect();
+            Explode();
         }
 
-        if (collision.gameObject.layer == LayerMask.NameToLayer("Walls"))
-        {
-           
-        }
     }
 
-    private void PlayExplodeEffect()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
+        //if (collision.CompareTag("adsfdg")) //ts should not explode if it hits a fly or smth.
+        Explode();
+    }
+
+    private void Explode()
+    {
+        var hits = Physics2D.OverlapCircleAll(transform.position, explosionRadius);
+
+        for(int i=0; i<hits.Length; i++)
+        {
+            Debug.Log(hits[i].name);
+            if (hits[i].TryGetComponent<Player>(out Player p))
+            {
+                Debug.Log("player " + p.PlayerName + " was hit by Explosion");
+                //p.TakeDamage(damage);
+                p.GetComponent<Rigidbody2D>().AddForce((p.transform.position - transform.position).normalized * 5f, ForceMode2D.Impulse);
+            }
+        }
+
         explosionEffect.transform.parent = null;
         explosionEffect.Play();
 
-        GameObject.Destroy(explosionEffect, 3f);
+        GameObject.Destroy(explosionEffect.gameObject, 3f);
+        Destroy(this.gameObject);
     }
 }

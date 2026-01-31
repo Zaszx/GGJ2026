@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3632981293208612242}
   - component: {fileID: 1718651197502280387}
-  - component: {fileID: 7963707439643879648}
   - component: {fileID: 5549346860344477818}
   - component: {fileID: 2515506283413828213}
   - component: {fileID: 8915709141021512278}
@@ -96,20 +95,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &7963707439643879648
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3870958470950366613}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7d3e7d400140714c81cf3622420258e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Projectile
-  speed: 10
-  damage: 50
 --- !u!50 &5549346860344477818
 Rigidbody2D:
   serializedVersion: 5

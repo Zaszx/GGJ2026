@@ -23,7 +23,7 @@ public class Projectile : MonoBehaviour
 
 	private void OnTriggerEnter2D(Collider2D other)
 	{
-		PlayerController hitPlayer = other.GetComponent<PlayerController>();
+		Player hitPlayer = other.GetComponent<Player>();
 		Projectile hitProjectile = other.GetComponent<Projectile>();
 
 		if (hitPlayer != null)

@@ -53,5 +53,13 @@ public class WaterLanceAttack : MonoBehaviour
 	{
 		// Example: if you want “projectile vs player/projectile/wall” like before,
 		// keep that logic here (layer-based) and call Destroy(gameObject).
+
+		Player player = other.GetComponent<Player>();
+		if (player != null)
+		{
+			player.ReceiveDamage(15);
+		}
+
+		Destroy(gameObject);
 	}
 }

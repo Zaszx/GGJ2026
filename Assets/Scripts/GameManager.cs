@@ -52,7 +52,7 @@ public class GameManager : MonoBehaviour
 		return direction;
 	}
 
-    public void OnPlayerDeath(PlayerController deadPlayer)
+    public void OnPlayerDeath(Player deadPlayer)
 	{
 
 	}

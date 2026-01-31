@@ -11,26 +11,15 @@ public class FireBasicAttackSkill : ISkill
         fireballPrefab = prefab;
     }
     public void Use(Player user)
-    {
-        /*
-        Vector2 dir = user.AimDirection;
+    {       
+        Vector2 dir = Vector2.right;
         GameObject.Instantiate(
             fireballPrefab,
-            user.CastPoint.position,
-            Quaternion.LookRotation(Vector3.forward, dir)
-        ); 
-        */
+            new(0f,0f,0f),
+            Quaternion.identity
+        ).GetComponent<FireBasicAttackBehaviour>().Shoot(Vector3.zero,dir);
+        Debug.Log("Player " + user.PlayerName + " used FireBasicAttackSkill");
+
     }
 
-}
-
-public class FireBasicAttackBehaviour : MonoBehaviour
-{
-    [Header("Parameters")]
-    [SerializeField] private float range = 10f;
-    [SerializeField] private float explosionRadius = 4f;
-
-    [Header("Visuals")]
-    [SerializeField] private ParticleSystem flyEffect;
-    [SerializeField] private ParticleSystem explosionEffect;
 }

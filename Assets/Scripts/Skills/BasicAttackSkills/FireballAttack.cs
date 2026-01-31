@@ -54,7 +54,7 @@ public class FireBasicAttackBehaviour : MonoBehaviour
                 Debug.Log("player " + p.PlayerName + " was hit by Explosion");
                 //p.TakeDamage(damage);
                 var dir = (Vector2)((p.transform.position - transform.position).normalized);
-                p.GetComponent<PlayerController>().AddExternalVelocity(dir * 25f);
+                p.GetComponent<PlayerController>().AddExternalVelocity(dir * 50f);
             }
         }
 

@@ -61,7 +61,7 @@ public static class MaskSkillFactory
         {
             Element.Air =>      new ExampleBasicAttack(),
             Element.Water =>    new WaterBasicAttack(Prefabs.WaterSweepAttack),
-            Element.Fire =>     new FireBasicAttackSkill(Prefabs.Projectile),
+            Element.Fire =>     new FireBasicAttackSkill(Prefabs.Fireball),
             Element.Earth =>    new ExampleBasicAttack(),
             _ => new ExampleBasicAttack(),
         };

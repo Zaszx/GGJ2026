@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class ExampleBasicAttack : ISkill
 {
-    public static CooldownType CooldownType => CooldownType.Fast;
+    public CooldownType CooldownType => CooldownType.Fast;
 
     public void Use(Player user)
     {

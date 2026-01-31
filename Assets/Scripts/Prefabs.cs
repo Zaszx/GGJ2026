@@ -3,6 +3,7 @@ using UnityEngine;
 public static class Prefabs
 {
     public static GameObject Projectile;
+    public static GameObject Fireball;
 	public static GameObject WaterSweepAttack;
 	public static GameObject WaterLanceAttack;
 	public static GameObject WaterBarrier;
@@ -15,5 +16,9 @@ public static class Prefabs
 		WaterLanceAttack = Resources.Load<GameObject>("Prefabs/WaterLanceAttack");
 		WaterBarrier = Resources.Load<GameObject>("Prefabs/WaterBarrier");
 		WaterUlti = Resources.Load<GameObject>("Prefabs/WaterUlti");
-	}
+
+
+        Fireball = Resources.Load<GameObject>("Prefabs/FireBall");
+    }
+	
 }

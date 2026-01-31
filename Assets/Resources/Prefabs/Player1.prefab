@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 3769391562917091996}
   - component: {fileID: 5275867415164313133}
   - component: {fileID: 3613935323463156843}
-  - component: {fileID: 1978273173162377799}
   - component: {fileID: 5546588174354371847}
+  - component: {fileID: 1978273173162377799}
   - component: {fileID: -1664509048823951369}
   - component: {fileID: 872617798607668525}
   m_Layer: 0
@@ -161,23 +161,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 0.56, y: 1}
   m_Direction: 0
---- !u!114 &1978273173162377799
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 369691630007682580}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fce11c8cb3bea0743adf4edf7fdd9c19, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerController
-  isPlayer1: 1
-  health: 100
-  moveSpeed: 5
-  normalizeDiagonal: 1
-  heavyAttackLoadDuration: 2
 --- !u!114 &5546588174354371847
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -208,6 +191,23 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &1978273173162377799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 369691630007682580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fce11c8cb3bea0743adf4edf7fdd9c19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerController
+  isPlayer1: 1
+  health: 100
+  stats: {fileID: 11400000, guid: 231b47782ca9c6349aa0eef2d82e8013, type: 2}
+  moveSpeed: 5
+  heavyAttackLoadDuration: 2
 --- !u!114 &-1664509048823951369
 MonoBehaviour:
   m_ObjectHideFlags: 0

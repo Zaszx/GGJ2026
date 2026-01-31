@@ -18,9 +18,10 @@ public class SkillController : MonoBehaviour
         skills.Add(SkillSlot.Defensive, newSkills[3]);
     }
 
-    public void UseSkill(SkillSlot slot)
+    public CooldownType UseSkill(SkillSlot slot)
     {
         skills[slot].Use(GetComponent<Player>());
+        return skills[slot].GetCooldown();
     }
     
 }

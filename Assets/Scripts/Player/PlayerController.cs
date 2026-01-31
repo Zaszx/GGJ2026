@@ -58,6 +58,10 @@ public class PlayerController : MonoBehaviour
 		_inputActionAsset[PlayerPrefix + "Move"].canceled += OnMove;
 		_inputActionAsset[PlayerPrefix + "Fire"].performed += OnFire;
 		_inputActionAsset[PlayerPrefix + "Fire"].canceled += OnFire;
+		_inputActionAsset[PlayerPrefix + "Defence"].performed += OnDefence;
+		_inputActionAsset[PlayerPrefix + "Defence"].canceled += OnDefence;
+		_inputActionAsset[PlayerPrefix + "Ult"].performed += OnUlt;
+		_inputActionAsset[PlayerPrefix + "Ult"].canceled += OnUlt;
 	}
 
 	private void OnDisable()
@@ -66,7 +70,12 @@ public class PlayerController : MonoBehaviour
 		_inputActionAsset[PlayerPrefix + "Move"].canceled -= OnMove;
 		_inputActionAsset[PlayerPrefix + "Fire"].performed -= OnFire;
 		_inputActionAsset[PlayerPrefix + "Fire"].canceled -= OnFire;
+		_inputActionAsset[PlayerPrefix + "Defence"].performed -= OnDefence;
+		_inputActionAsset[PlayerPrefix + "Defence"].canceled -= OnDefence;
+		_inputActionAsset[PlayerPrefix + "Ult"].performed -= OnUlt;
+		_inputActionAsset[PlayerPrefix + "Ult"].canceled -= OnUlt;
 	}
+
 
 	private float _heavyAttackProgress;
 	private bool _isHoldingFire;
@@ -99,7 +108,7 @@ public class PlayerController : MonoBehaviour
 				else if (!_attackLock && !_isOnCooldown)
 				{
 					Debug.Log("Normal Attack");
-					StartCoroutine(AttackCooldown(_skillController.UseSkill(SkillSlot.BasicAttack)));
+					StartCoroutine(SkillCooldown(_skillController.UseSkill(SkillSlot.BasicAttack)));
 					_attackLock = true;
 				}
 
@@ -165,7 +174,7 @@ public class PlayerController : MonoBehaviour
 		_isHoldingFire = true;
 		
 	}
-	private IEnumerator AttackCooldown(CooldownType cooldown)
+	private IEnumerator SkillCooldown(CooldownType cooldown)
 	{
 		_isOnCooldown = true;
 		switch (cooldown)
@@ -178,5 +187,23 @@ public class PlayerController : MonoBehaviour
 		Debug.Log("Cooldown End");
 		_isOnCooldown = false;
 		yield return null;
+	}
+	
+	private void OnUlt(InputAction.CallbackContext ctx)
+	{
+		if (ctx.canceled)
+		{
+			return;
+		}
+		StartCoroutine(SkillCooldown(_skillController.UseSkill(SkillSlot.Ulti)));
+	}
+
+	private void OnDefence(InputAction.CallbackContext ctx)
+	{
+		if (ctx.canceled)
+		{
+			return;
+		}
+		StartCoroutine(SkillCooldown(_skillController.UseSkill(SkillSlot.Defensive)));
 	}
 }

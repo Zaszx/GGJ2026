@@ -101,12 +101,23 @@
                 },
                 {
                     "name": "",
+                    "id": "6e3a13f7-a508-4373-bf04-58f2823953db",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard1",
+                    "action": "1Fire",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "798b9af9-b830-44e0-b97e-f3eeedda8d9b",
                     "path": "<Keyboard>/enter",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard2",
-                    "action": "1Fire",
+                    "action": "2Fire",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -164,17 +175,6 @@
                     "action": "2Move",
                     "isComposite": false,
                     "isPartOfComposite": true
-                },
-                {
-                    "name": "",
-                    "id": "6e3a13f7-a508-4373-bf04-58f2823953db",
-                    "path": "<Keyboard>/e",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Keyboard1",
-                    "action": "2Fire",
-                    "isComposite": false,
-                    "isPartOfComposite": false
                 }
             ]
         }

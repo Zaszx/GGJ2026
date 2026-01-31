@@ -106,8 +106,12 @@ public class PlayerController : MonoBehaviour
 		_moveDir = ctx.ReadValue<Vector2>();
 	}
 
-	public void OnFire(InputAction.CallbackContext context)
+	public void OnFire(InputAction.CallbackContext ctx)
 	{
+		if (ctx.canceled)
+		{
+			return;
+		}
 		GameManager.Instance.Fire(this);
 	}
 }

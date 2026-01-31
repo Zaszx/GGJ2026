@@ -26,4 +26,9 @@ public class SkillInstance
         foreach (var e in effects)
             e.AfterUse(user);
     }
+
+    public CooldownType GetCooldown()
+    {
+        return skill.CooldownType;
+    }
 }

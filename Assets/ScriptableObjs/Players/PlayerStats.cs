@@ -4,7 +4,7 @@ using UnityEngine;
 public class PlayerStats : ScriptableObject
 {
     public string PlayerName;
-
+    
     [Header("Basic Stats")]
     public float MaxHp;
     public float MoveSpeed;

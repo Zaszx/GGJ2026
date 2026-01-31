@@ -2,7 +2,7 @@
 {
     public class AirBasicAttack : ISkill
     {
-        public static CooldownType CooldownType => CooldownType.Fast;
+        public CooldownType CooldownType => CooldownType.Fast;
         public void Use(Player user)
         {
             

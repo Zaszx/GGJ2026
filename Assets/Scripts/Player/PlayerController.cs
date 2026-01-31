@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UI;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -20,12 +21,13 @@ public class PlayerController : MonoBehaviour
 	[Header("Player")]
 	[SerializeField] private bool isPlayer1 = true;
 	[SerializeField] private int health = 100;
+	[SerializeField] private PlayerStats stats;
 	private Rigidbody2D _rb;
 	private SkillController _skillController;
 
 	[Header("Movement")]
 	[SerializeField] private float moveSpeed = 5f;
-	[SerializeField] private bool normalizeDiagonal = true;
+	//[SerializeField] private bool normalizeDiagonal = true;
 
 	public FacingDirection Facing { get; private set; } = FacingDirection.Down;
 
@@ -38,6 +40,7 @@ public class PlayerController : MonoBehaviour
 	private Vector2 _moveDir;
 	private string PlayerPrefix => isPlayer1 ? "1" : "2";
 	private HeavyAttackLoading _heavyAttackLoadingBar;
+	private bool _isOnCooldown;
 
 	private void Awake()
 	{
@@ -84,21 +87,20 @@ public class PlayerController : MonoBehaviour
 			}
 			else
 			{
-				switch (_attackLock)
+				if (!_attackLock && !_isOnCooldown && _heavyAttackProgress >= 1f)
 				{
-					case false when _heavyAttackProgress >= 1f:
-						// Heavy Attack
-						Debug.Log("Heavy Attack");
-						_skillController.UseSkill(SkillSlot.Ulti);
-						_attackLock = true;
-						_heavyAttackProgress = 0f;
-						_heavyAttackLoadingBar.ResetBar();
-						break;
-					case false:
-						Debug.Log("Normal Attack");
-						_skillController.UseSkill(SkillSlot.BasicAttack);
-						_attackLock = true;
-						break;
+					// Heavy Attack
+					Debug.Log("Heavy Attack");
+					_skillController.UseSkill(SkillSlot.HeavyAttack);
+					_attackLock = true;
+					_heavyAttackProgress = 0f;
+					_heavyAttackLoadingBar.ResetBar();
+				}
+				else if (!_attackLock && !_isOnCooldown)
+				{
+					Debug.Log("Normal Attack");
+					StartCoroutine(AttackCooldown(_skillController.UseSkill(SkillSlot.BasicAttack)));
+					_attackLock = true;
 				}
 
 				_heavyAttackProgress = 0f;
@@ -106,7 +108,7 @@ public class PlayerController : MonoBehaviour
 			}
 		}
 	}
-
+	
 	private void FixedUpdate()
 	{
 		UpdateMovement(_moveDir);
@@ -163,5 +165,18 @@ public class PlayerController : MonoBehaviour
 		_isHoldingFire = true;
 		
 	}
-
+	private IEnumerator AttackCooldown(CooldownType cooldown)
+	{
+		_isOnCooldown = true;
+		switch (cooldown)
+		{
+			case CooldownType.Fast: yield return new WaitForSeconds(stats.FastSkillCD);
+				break;
+			case CooldownType.Medium: yield return new WaitForSeconds(stats.MediumSkillCD);
+				break;
+		}
+		Debug.Log("Cooldown End");
+		_isOnCooldown = false;
+		yield return null;
+	}
 }

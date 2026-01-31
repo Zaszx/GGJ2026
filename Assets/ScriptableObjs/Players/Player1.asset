@@ -15,9 +15,9 @@ MonoBehaviour:
   PlayerName: Player 1
   MaxHp: 300
   MoveSpeed: 20
-  FastSkillCD: 3
-  MediumSkillCD: 7
-  SlowSkillCD: 12
+  FastSkillCD: 1
+  MediumSkillCD: 3
+  SlowSkillCD: 6
   LowCostUltSP: 4
   MediumCostUltSP: 7
   HighCostUltSP: 10

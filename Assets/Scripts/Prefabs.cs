@@ -6,6 +6,7 @@ public static class Prefabs
 	public static GameObject WaterSweepAttack;
 	public static GameObject WaterLanceAttack;
 	public static GameObject WaterBarrier;
+	public static GameObject WaterUlti;
 
 	static Prefabs()
 	{
@@ -13,5 +14,6 @@ public static class Prefabs
 		WaterSweepAttack = Resources.Load<GameObject>("Prefabs/WaterSweepAttack");
 		WaterLanceAttack = Resources.Load<GameObject>("Prefabs/WaterLanceAttack");
 		WaterBarrier = Resources.Load<GameObject>("Prefabs/WaterBarrier");
+		WaterUlti = Resources.Load<GameObject>("Prefabs/WaterUlti");
 	}
 }

@@ -46,7 +46,7 @@ public static class MaskSkillFactory
         ISkill skill = element switch
         {
             Element.Fire =>  new ExampleUlti(),
-            Element.Water => new ExampleUlti(),
+            Element.Water => new WaterUltiSkill(Prefabs.WaterUlti),
             Element.Air =>   new ExampleUlti(),
             Element.Earth => new ExampleUlti(),
             _ => new ExampleUlti()

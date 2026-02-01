@@ -6,7 +6,6 @@ public class FirepitDash : MonoBehaviour
     [Header("Parameters")]
     [SerializeField] private float damageOverTime = 25f;
     [SerializeField] private float fireLifeTime = 5f;
-    [SerializeField] private float fireRadius = 4f;
 
     [SerializeField] private float dashForce = 25f;
 

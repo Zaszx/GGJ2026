@@ -22,6 +22,7 @@ public class PlayerController : MonoBehaviour
 	[Header("Player")]
 	[SerializeField] private bool isPlayer1 = true;
 	[SerializeField] private PlayerStats stats;
+	public Player PlayerScript { get; private set; }
 	
 	private Rigidbody2D _rb;
 	private SkillController _skillController;
@@ -51,6 +52,7 @@ public class PlayerController : MonoBehaviour
 
 	private void Awake()
 	{
+		PlayerScript = GetComponent<Player>();
 		PlayerPrefix = isPlayer1 ? "1" : "2";
 		_skillController = GetComponent<SkillController>();
 		_rb = GetComponent<Rigidbody2D>();

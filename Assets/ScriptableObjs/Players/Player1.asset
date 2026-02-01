@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Player1
   m_EditorClassIdentifier: Assembly-CSharp::PlayerStats
   PlayerName: Player 1
-  MaxHp: 300
-  MoveSpeed: 20
+  PlayerSelection: 0
+  MaxHp: 125
+  MoveSpeed: 18
   FastSkillCD: 1
   MediumSkillCD: 3
   SlowSkillCD: 6

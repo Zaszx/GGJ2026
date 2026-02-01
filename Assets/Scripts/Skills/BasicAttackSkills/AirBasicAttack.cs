@@ -10,7 +10,7 @@ namespace Skills.BasicAttackSkills
         {
             ShootAt(user ,user.transform);
         }
-        private float projectileSpeed = 10f;
+        private float projectileSpeed = 30f;
 
         private void ShootAt(Player player, Transform firePoint)
         {

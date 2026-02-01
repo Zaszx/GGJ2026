@@ -172,10 +172,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireBasicAttackBehaviour
   damage: 20
-  explosionRadius: 2
+  explosionRadius: 1.5
   explosionKnockback: 5
   speed: 12.5
-  lifeTime: 0.7
+  lifeTime: 2
   flyEffect: {fileID: 319834955088973342}
   explosionEffect: {fileID: 8266072239444582942}
   RB: {fileID: 5549346860344477818}

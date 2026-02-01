@@ -8,7 +8,7 @@ namespace Skills.BasicAttackSkills.BasicAttackBehaviours
         private Rigidbody2D _rb;
         private Collider2D _col;
         private const float KnockbackForce = 10f;
-        private const float Damage = 2.5f;
+        private const float Damage = 12.5f;
         public string SourceTag { get; set; }
 
         private void Start()

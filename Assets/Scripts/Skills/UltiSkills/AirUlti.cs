@@ -10,7 +10,10 @@ namespace Skills.UltiSkills
         {
             //Sence bende bunu yapacak kafa kaldı mı?
             GameObject go = Object.Instantiate(Prefabs.AirUlt);
-            go.GetComponent<AirUltiBehaviour>().Target = GameObject.FindGameObjectWithTag(user.CompareTag("Player1") ? "Player2" : "Player1");
+            var airUltiBehaviour = go.GetComponent<AirUltiBehaviour>();
+            airUltiBehaviour.Target = GameObject.FindGameObjectWithTag(user.CompareTag("Player1") ? "Player2" : "Player1");
+            airUltiBehaviour.Origin = user.transform.position;
+            
         }
     }
 }

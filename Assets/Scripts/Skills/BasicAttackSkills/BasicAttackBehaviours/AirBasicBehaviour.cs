@@ -7,7 +7,7 @@ namespace Skills.BasicAttackSkills.BasicAttackBehaviours
     {
         private Rigidbody2D _rb;
         private Collider2D _col;
-        private const float KnockbackForce = 5f;
+        private const float KnockbackForce = 10f;
         public string SourceTag { get; set; }
 
         private void Start()
@@ -21,9 +21,10 @@ namespace Skills.BasicAttackSkills.BasicAttackBehaviours
             if (other.gameObject.layer == LayerMask.NameToLayer("Player"))
             {
                 PlayerController hitPlayer = other.GetComponent<PlayerController>();
-                if (hitPlayer != null)
+                if (hitPlayer != null && !other.gameObject.CompareTag(SourceTag))
                 {
                     hitPlayer.ApplyKnockback(_rb.linearVelocity.normalized, KnockbackForce, SourceTag);
+                    Destroy(gameObject);
                 }
             }
         }

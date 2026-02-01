@@ -1,3 +1,4 @@
+using Skills.UltiSkills;
 using UnityEngine;
 
 public static class Prefabs
@@ -12,6 +13,7 @@ public static class Prefabs
 	public static GameObject WaterBarrier;
 	public static GameObject WaterUlti;
 	public static GameObject AirBasic;
+	public static GameObject AirUlt;
 
 	static Prefabs()
 	{
@@ -26,7 +28,10 @@ public static class Prefabs
         FirePit =			Resources.Load<GameObject>("Prefabs/FirePit");
 		FireInferno =		Resources.Load<GameObject>("Prefabs/FireInferno");
 
-        AirBasic =			Resources.Load<GameObject>("Prefabs/AirBasic");
+        Fireball = Resources.Load<GameObject>("Prefabs/FireBall");
+
+        AirBasic = Resources.Load<GameObject>("Prefabs/AirBasic");
+        AirUlt = Resources.Load<GameObject>("Prefabs/AirUlti");
 	}
 	
 }

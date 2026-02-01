@@ -12,14 +12,16 @@ public class Player : MonoBehaviour
     [SerializeField] PlayerStats stats;
     [SerializeField] SkillController playerSkillController;
 	[SerializeField] Image healthBar;
+    public PlayerController Controller { get; private set; }
 
-	private float currentHealth;
+    private float currentHealth;
 
     public string PlayerName => stats.PlayerName;
 
 
     private void Start()
     {
+        Controller = GetComponent<PlayerController>();
         currentHealth = stats.MaxHp;
 
         healthBar.fillAmount = 1;

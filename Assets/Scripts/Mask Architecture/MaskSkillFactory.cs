@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Diagnostics;
 using Skills.BasicAttackSkills;
+using Skills.DefensiveSkills;
 using UnityEngine.UI;
 
 public static class MaskSkillFactory
@@ -88,7 +89,7 @@ public static class MaskSkillFactory
         {
             Element.Fire =>     new FireDefensiveSkill(Prefabs.FirePit),
             Element.Water =>    new WaterDefensiveSkill(Prefabs.WaterBarrier),
-            Element.Air =>      new ExampleDefensive(),
+            Element.Air =>      new AirDefence(),
             Element.Earth =>    new ExampleDefensive(),
             _ => new ExampleDefensive()
         };

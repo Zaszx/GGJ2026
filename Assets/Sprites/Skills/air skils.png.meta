@@ -1,0 +1,455 @@
+fileFormatVersion: 2
+guid: a35b0e0331f64f34ab2036b5b7940ec8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6235659344331334491
+    second: air skils_0
+  - first:
+      213: 3857977340634466152
+    second: air skils_1
+  - first:
+      213: 8548486517251829063
+    second: air skils_2
+  - first:
+      213: 483251483893464102
+    second: air skils_3
+  - first:
+      213: 7127656556334070595
+    second: air skils_4
+  - first:
+      213: -5656247467117662590
+    second: air skils_5
+  - first:
+      213: 8901509542111824998
+    second: air skils_6
+  - first:
+      213: -6329213299878442960
+    second: air skils_7
+  - first:
+      213: -8001953695654733795
+    second: air skils_8
+  - first:
+      213: -1502240081303801789
+    second: air skils_9
+  - first:
+      213: -6428092971835541712
+    second: air skils_10
+  - first:
+      213: 1721231257954466232
+    second: air skils_11
+  - first:
+      213: -7166808545678693177
+    second: air skils_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: air skils_0
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 3910
+        width: 556
+        height: 545
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ac19c04ddc7679a0800000000000000
+      internalID: -6235659344331334491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air skils_1
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 3901
+        width: 1491
+        height: 522
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 867060c63f94a8530800000000000000
+      internalID: 3857977340634466152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air skils_2
+      rect:
+        serializedVersion: 2
+        x: 2852
+        y: 4071
+        width: 202
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74de204123352a670800000000000000
+      internalID: 8548486517251829063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air skils_3
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 3622
+        width: 1827
+        height: 802
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62c76aa0aaad4b600800000000000000
+      internalID: 483251483893464102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air skils_4
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 2615
+        width: 2893
+        height: 1148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34bb641cfd58ae260800000000000000
+      internalID: 7127656556334070595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air skils_5
+      rect:
+        serializedVersion: 2
+        x: 2679
+        y: 3352
+        width: 986
+        height: 671
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28eafb095e8f081b0800000000000000
+      internalID: -5656247467117662590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air skils_6
+      rect:
+        serializedVersion: 2
+        x: 4012
+        y: 2897
+        width: 1960
+        height: 648
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66c435e24c3888b70800000000000000
+      internalID: 8901509542111824998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air skils_7
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 1731
+        width: 406
+        height: 516
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0384111990e1a28a0800000000000000
+      internalID: -6329213299878442960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air skils_8
+      rect:
+        serializedVersion: 2
+        x: 1195
+        y: 1339
+        width: 673
+        height: 909
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d18106d828953f090800000000000000
+      internalID: -8001953695654733795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air skils_9
+      rect:
+        serializedVersion: 2
+        x: 2101
+        y: 1042
+        width: 951
+        height: 1225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3407882fa98f62be0800000000000000
+      internalID: -1502240081303801789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air skils_10
+      rect:
+        serializedVersion: 2
+        x: 3071
+        y: 517
+        width: 1242
+        height: 1760
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 037be86ef73dac6a0800000000000000
+      internalID: -6428092971835541712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air skils_11
+      rect:
+        serializedVersion: 2
+        x: 4491
+        y: 232
+        width: 1452
+        height: 2111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b9bcaaa5ba03e710800000000000000
+      internalID: 1721231257954466232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: air skils_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 83
+        width: 1909
+        height: 1275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cc669d59916a8c90800000000000000
+      internalID: -7166808545678693177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      air skils_0: -6235659344331334491
+      air skils_1: 3857977340634466152
+      air skils_10: -6428092971835541712
+      air skils_11: 1721231257954466232
+      air skils_12: -7166808545678693177
+      air skils_2: 8548486517251829063
+      air skils_3: 483251483893464102
+      air skils_4: 7127656556334070595
+      air skils_5: -5656247467117662590
+      air skils_6: 8901509542111824998
+      air skils_7: -6329213299878442960
+      air skils_8: -8001953695654733795
+      air skils_9: -1502240081303801789
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,585 @@
+fileFormatVersion: 2
+guid: e2b7af98471327844b768cb630ba56a1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2498991919294210620
+    second: water  skils_0
+  - first:
+      213: -3389619877298761091
+    second: water  skils_1
+  - first:
+      213: -7074312219330421502
+    second: water  skils_2
+  - first:
+      213: -3177945465785679435
+    second: water  skils_3
+  - first:
+      213: -226632276566693970
+    second: water  skils_4
+  - first:
+      213: 4244176105366804972
+    second: water  skils_5
+  - first:
+      213: 8985950503967644589
+    second: water  skils_6
+  - first:
+      213: -7005913790660175578
+    second: water  skils_7
+  - first:
+      213: -5699980784099712199
+    second: water  skils_8
+  - first:
+      213: 3874848462369290632
+    second: water  skils_9
+  - first:
+      213: 510704819294947943
+    second: water  skils_10
+  - first:
+      213: 4335859843405707619
+    second: water  skils_11
+  - first:
+      213: 5062489078050884797
+    second: water  skils_12
+  - first:
+      213: 1133495590468237955
+    second: water  skils_13
+  - first:
+      213: 2348384254343229003
+    second: water  skils_14
+  - first:
+      213: -4248300833272360056
+    second: water  skils_15
+  - first:
+      213: 3522635308981719995
+    second: water  skils_16
+  - first:
+      213: 4533525205480772168
+    second: water  skils_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: water  skils_0
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 3888
+        width: 351
+        height: 286
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c326a1e09e33ea220800000000000000
+      internalID: 2498991919294210620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water  skils_1
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 3748
+        width: 371
+        height: 470
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d72110a3ea6a5f0d0800000000000000
+      internalID: -3389619877298761091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water  skils_2
+      rect:
+        serializedVersion: 2
+        x: 1223
+        y: 3548
+        width: 374
+        height: 646
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20dda90948ef2dd90800000000000000
+      internalID: -7074312219330421502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water  skils_3
+      rect:
+        serializedVersion: 2
+        x: 1752
+        y: 3369
+        width: 508
+        height: 1065
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b10844bf6ba5e3d0800000000000000
+      internalID: -3177945465785679435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water  skils_4
+      rect:
+        serializedVersion: 2
+        x: 2446
+        y: 3410
+        width: 542
+        height: 942
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea7aa9c2527dadcf0800000000000000
+      internalID: -226632276566693970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water  skils_5
+      rect:
+        serializedVersion: 2
+        x: 3279
+        y: 3678
+        width: 450
+        height: 547
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce9d6946ea756ea30800000000000000
+      internalID: 4244176105366804972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water  skils_6
+      rect:
+        serializedVersion: 2
+        x: 3937
+        y: 3723
+        width: 350
+        height: 408
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dabdb3eaf5284bc70800000000000000
+      internalID: 8985950503967644589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water  skils_7
+      rect:
+        serializedVersion: 2
+        x: 4461
+        y: 3499
+        width: 1394
+        height: 461
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62990bcb68ef5ce90800000000000000
+      internalID: -7005913790660175578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water  skils_8
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 2407
+        width: 568
+        height: 366
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9332f293da995e0b0800000000000000
+      internalID: -5699980784099712199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water  skils_9
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 2222
+        width: 899
+        height: 832
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8897dfd852a36c530800000000000000
+      internalID: 3874848462369290632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water  skils_10
+      rect:
+        serializedVersion: 2
+        x: 2299
+        y: 1972
+        width: 1210
+        height: 1148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76ac72bc353661700800000000000000
+      internalID: 510704819294947943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water  skils_11
+      rect:
+        serializedVersion: 2
+        x: 4003
+        y: 1979
+        width: 1467
+        height: 1095
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 369f3122e811c2c30800000000000000
+      internalID: 4335859843405707619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water  skils_12
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 840
+        width: 1746
+        height: 974
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbc84888ef2914640800000000000000
+      internalID: 5062489078050884797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water  skils_13
+      rect:
+        serializedVersion: 2
+        x: 1897
+        y: 877
+        width: 2049
+        height: 825
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38ab458eb3cfabf00800000000000000
+      internalID: 1133495590468237955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water  skils_14
+      rect:
+        serializedVersion: 2
+        x: 4042
+        y: 860
+        width: 1844
+        height: 557
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4eaf3c7903279020800000000000000
+      internalID: 2348384254343229003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water  skils_15
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 260
+        width: 1872
+        height: 342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8831ecd86e00b05c0800000000000000
+      internalID: -4248300833272360056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water  skils_16
+      rect:
+        serializedVersion: 2
+        x: 2828
+        y: 314
+        width: 1222
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb39a19562ae2e030800000000000000
+      internalID: 3522635308981719995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: water  skils_17
+      rect:
+        serializedVersion: 2
+        x: 4406
+        y: 352
+        width: 755
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84216fc97215aee30800000000000000
+      internalID: 4533525205480772168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      water  skils_0: 2498991919294210620
+      water  skils_1: -3389619877298761091
+      water  skils_10: 510704819294947943
+      water  skils_11: 4335859843405707619
+      water  skils_12: 5062489078050884797
+      water  skils_13: 1133495590468237955
+      water  skils_14: 2348384254343229003
+      water  skils_15: -4248300833272360056
+      water  skils_16: 3522635308981719995
+      water  skils_17: 4533525205480772168
+      water  skils_2: -7074312219330421502
+      water  skils_3: -3177945465785679435
+      water  skils_4: -226632276566693970
+      water  skils_5: 4244176105366804972
+      water  skils_6: 8985950503967644589
+      water  skils_7: -7005913790660175578
+      water  skils_8: -5699980784099712199
+      water  skils_9: 3874848462369290632
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

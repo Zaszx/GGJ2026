@@ -16,10 +16,12 @@ namespace Skills.BasicAttackSkills
         {
             GameObject projectilePrefab = Prefabs.AirBasic;
             Vector2 direction = GameManager.Instance.GetFiringDirectionForPlayer(player);
+            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
             
             GameObject projectile =
                 Object.Instantiate(projectilePrefab, firePoint.position, Quaternion.identity);
 
+            projectile.transform.rotation = Quaternion.Euler(0f, 0f, angle);
             Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
             AirBasicBehaviour behaviour = projectile.GetComponent<AirBasicBehaviour>();
             behaviour.SourceTag = player.gameObject.tag;

@@ -19,6 +19,8 @@ public class WaterSweepAttack : MonoBehaviour
 	// and rotate this object (root) while offsetting the child on X by radius.
 	private Transform pivot;
 
+	bool alreadyHit = false;
+
 	private void Awake()
 	{
 		pivot = transform;
@@ -81,5 +83,15 @@ public class WaterSweepAttack : MonoBehaviour
 	{
 		float rad = angleDeg * Mathf.Deg2Rad;
 		return new Vector2(Mathf.Cos(rad), Mathf.Sin(rad));
+	}
+
+	private void OnTriggerEnter2D(Collider2D other)
+	{
+		Player player = other.GetComponent<Player>();
+		if (!alreadyHit && player != null && player != owner)
+		{
+			player.ReceiveDamage(15f);
+			alreadyHit = true;
+		}
 	}
 }

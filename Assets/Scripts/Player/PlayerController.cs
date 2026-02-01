@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using UI;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -40,7 +41,13 @@ public class PlayerController : MonoBehaviour
 	private Vector2 _moveDir;
 	public static string PlayerPrefix;
 	private HeavyAttackLoading _heavyAttackLoadingBar;
-	private bool _isOnCooldown;
+	private Dictionary<SkillSlot, bool> _skillCooldowns = new()
+	{
+		{ SkillSlot.BasicAttack, false },
+		{ SkillSlot.HeavyAttack, false },
+		{ SkillSlot.Defensive, false },
+		{ SkillSlot.Ulti, false }
+	};
 
 	private void Awake()
 	{
@@ -97,7 +104,7 @@ public class PlayerController : MonoBehaviour
 			}
 			else
 			{
-				if (!_attackLock && !_isOnCooldown && _heavyAttackProgress >= 1f)
+				if (!_attackLock && !_skillCooldowns[SkillSlot.BasicAttack] && _heavyAttackProgress >= 1f)
 				{
 					// Heavy Attack
 					Debug.Log("Heavy Attack");
@@ -106,10 +113,10 @@ public class PlayerController : MonoBehaviour
 					_heavyAttackProgress = 0f;
 					_heavyAttackLoadingBar.ResetBar();
 				}
-				else if (!_attackLock && !_isOnCooldown)
+				else if (!_attackLock && !_skillCooldowns[SkillSlot.BasicAttack])
 				{
 					Debug.Log("Normal Attack");
-					StartCoroutine(SkillCooldown(_skillController.UseSkill(SkillSlot.BasicAttack)));
+					StartCoroutine(SkillCooldown(_skillController.UseSkill(SkillSlot.BasicAttack), SkillSlot.BasicAttack));
 					_attackLock = true;
 				}
 
@@ -190,9 +197,9 @@ public class PlayerController : MonoBehaviour
 		_isHoldingFire = true;
 		
 	}
-	private IEnumerator SkillCooldown(CooldownType cooldown)
+	private IEnumerator SkillCooldown(CooldownType cooldown, SkillSlot skillType)
 	{
-		_isOnCooldown = true;
+		_skillCooldowns[skillType] = true;
 		switch (cooldown)
 		{
 			case CooldownType.Fast: yield return new WaitForSeconds(stats.FastSkillCD);
@@ -201,28 +208,30 @@ public class PlayerController : MonoBehaviour
 				break;
 			case CooldownType.Slow: yield return new WaitForSeconds(stats.SlowSkillCD);
 				break;
+			case CooldownType.Ulti: yield return new WaitForSeconds(stats.SlowSkillCD);
+				break;
 		}
 		Debug.Log("Cooldown End");
-		_isOnCooldown = false;
+		_skillCooldowns[skillType] = false;
 		yield return null;
 	}
 	
 	private void OnUlt(InputAction.CallbackContext ctx)
 	{
-		if (ctx.canceled)
+		if (ctx.canceled || _skillCooldowns[SkillSlot.Ulti])
 		{
 			return;
 		}
-		StartCoroutine(SkillCooldown(_skillController.UseSkill(SkillSlot.Ulti)));
+		StartCoroutine(SkillCooldown(_skillController.UseSkill(SkillSlot.Ulti), SkillSlot.Ulti));
 	}
 
 	private void OnDefence(InputAction.CallbackContext ctx)
 	{
-		if (ctx.canceled)
+		if (ctx.canceled || _skillCooldowns[SkillSlot.Defensive])
 		{
 			return;
 		}
-		StartCoroutine(SkillCooldown(_skillController.UseSkill(SkillSlot.Defensive)));
+		StartCoroutine(SkillCooldown(_skillController.UseSkill(SkillSlot.Defensive), SkillSlot.Defensive));
 	}
 	private bool _isKnockedBack;
 	public void ApplyKnockback(Vector2 direction, float force, string sourceTag)
@@ -230,6 +239,13 @@ public class PlayerController : MonoBehaviour
 		if (CompareTag(sourceTag)) return;
 		_isKnockedBack = true;
 		_rb.AddForce(direction * force, ForceMode2D.Impulse);
+		StartCoroutine(KnockbackCooldown(0.3f));
 		
+	}
+
+	private IEnumerator KnockbackCooldown(float duration)
+	{
+		yield return new WaitForSeconds(duration);
+		_isKnockedBack = false;
 	}
 }

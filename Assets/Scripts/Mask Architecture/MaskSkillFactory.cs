@@ -2,6 +2,7 @@
 using System.Diagnostics;
 using Skills.BasicAttackSkills;
 using Skills.DefensiveSkills;
+using Skills.UltiSkills;
 using UnityEngine.UI;
 
 public static class MaskSkillFactory
@@ -49,7 +50,7 @@ public static class MaskSkillFactory
         {
             Element.Fire =>  new FireUltimateSkill(Prefabs.FireInferno),
             Element.Water => new WaterUltiSkill(Prefabs.WaterUlti),
-            Element.Air =>   new ExampleUlti(),
+            Element.Air =>   new AirUlti(),
             Element.Earth => new ExampleUlti(),
             _ => new ExampleUlti()
         };

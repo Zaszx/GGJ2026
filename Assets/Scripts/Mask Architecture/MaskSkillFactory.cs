@@ -11,22 +11,22 @@ public static class MaskSkillFactory
 
         // FACE → ulti
         var ulti = CreateUltiSkill(mask.face.element);
-        ApplySynergy(ulti, mask.face.element, mask.teeth.element); //buradaki efekt kombinasyonlarını şimdilik boşverin knk, böyle example olarak kalsın beraber doldururuz.
-        ApplySynergy(ulti, mask.face.element, mask.crown.element);
+        //ApplySynergy(ulti, mask.face.element, mask.teeth.element); //buradaki efekt kombinasyonlarını şimdilik boşverin knk, böyle example olarak kalsın beraber doldururuz.
+        //ApplySynergy(ulti, mask.face.element, mask.crown.element);
         skills.Add(ulti);
 
         // TEETH → basic
         var basic = CreateBasicSkill(mask.teeth.element);
-        ApplySynergy(basic, mask.face.element, mask.teeth.element);
+        //ApplySynergy(basic, mask.face.element, mask.teeth.element);
         skills.Add(basic);
         // -> heavy
         var heavy = CreateHeavySkill(mask.teeth.element);
-        ApplySynergy(basic, mask.face.element, mask.teeth.element);
+        //ApplySynergy(basic, mask.face.element, mask.teeth.element);
         skills.Add(heavy);
 
         // CROWN → defensive
         var def = CreateDefensiveSkill(mask.crown.element);
-        ApplySynergy(def, mask.face.element, mask.crown.element);
+        //ApplySynergy(def, mask.face.element, mask.crown.element);
         skills.Add(def);
 
         return skills;
@@ -46,7 +46,7 @@ public static class MaskSkillFactory
     {
         ISkill skill = element switch
         {
-            Element.Fire =>  new ExampleUlti(),
+            Element.Fire =>  new FireUltimateSkill(Prefabs.FireInferno),
             Element.Water => new WaterUltiSkill(Prefabs.WaterUlti),
             Element.Air =>   new ExampleUlti(),
             Element.Earth => new ExampleUlti(),

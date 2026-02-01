@@ -84,7 +84,7 @@ SpriteRenderer:
   m_SortingLayerID: 1888266535
   m_SortingLayer: 2
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 26fe2a69663553a47816e9638b77d9c4, type: 3}
+  m_Sprite: {fileID: -2339653513740751930, guid: 4cfcaf033167130458698041e84e42ef, type: 3}
   m_Color: {r: 1, g: 0.5779401, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -156,8 +156,8 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.32242304, y: 0.1027869}
-  m_Radius: 0.675
+  m_Offset: {x: 0.19, y: 0}
+  m_Radius: 0.25
 --- !u!114 &8915709141021512278
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -170,10 +170,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd2bfe6eb8e45854d96b9213453fefcb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireBasicAttackBehaviour
-  damage: 25
-  explosionRadius: 4
-  explosionKnockback: 25
-  speed: 15
+  damage: 20
+  explosionRadius: 2
+  explosionKnockback: 5
+  speed: 12.5
   lifeTime: 0.7
   flyEffect: {fileID: 319834955088973342}
   explosionEffect: {fileID: 8266072239444582942}
@@ -205,7 +205,7 @@ Transform:
   m_GameObject: {fileID: 5360479514240658651}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.25, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -294,7 +294,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1.5
+      scalar: 1
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -347,7 +347,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 25
+      scalar: 12.5
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -929,7 +929,7 @@ ParticleSystem:
     sphericalDirectionAmount: 0
     randomPositionAmount: 0
     radius:
-      value: 1
+      value: 0.15
       mode: 0
       spread: 0
       speed:
@@ -1158,7 +1158,7 @@ ParticleSystem:
       countCurve:
         serializedVersion: 2
         minMaxState: 0
-        scalar: 150
+        scalar: 50
         minScalar: 30
         maxCurve:
           serializedVersion: 2
@@ -5100,7 +5100,7 @@ Transform:
   m_GameObject: {fileID: 7148273089451905776}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.70710677, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0.71, y: 0.15, z: 0}
+  m_LocalPosition: {x: -0.3, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5741,7 +5741,7 @@ ParticleSystem:
     angle: 25
     length: 5
     boxThickness: {x: 0, y: 0, z: 0}
-    radiusThickness: 1
+    radiusThickness: 0
     donutRadius: 0.2
     m_Position: {x: 0, y: 0, z: 0}
     m_Rotation: {x: 0, y: 0, z: 0}
@@ -5824,7 +5824,7 @@ ParticleSystem:
     sphericalDirectionAmount: 0
     randomPositionAmount: 0
     radius:
-      value: 1
+      value: 0.3
       mode: 0
       spread: 0
       speed:

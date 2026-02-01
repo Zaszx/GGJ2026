@@ -1,15 +1,13 @@
-﻿using System.Collections.Generic;
-using UnityEngine;
-using static UnityEngine.EventSystems.EventTrigger;
+﻿using UnityEngine;
 
-public class FireballAttack : MonoBehaviour
+public class FireInferno : MonoBehaviour
 {
     [Header("Parameters")]
-    [SerializeField] private float damage = 25f;
-    [SerializeField] private float explosionRadius = 2f;
-    [SerializeField] private float explosionKnockback = 15f;
+    [SerializeField] private float damage = 35f;
+    [SerializeField] private float explosionRadius = 3.5f;
+    [SerializeField] private float explosionKnockback = 25f;
     [SerializeField] private float speed = 10f;
-    [SerializeField] private float lifeTime = 1f;
+    [SerializeField] private float lifeTime = 1.5f;
 
     [Header("Visuals")]
     [SerializeField] private ParticleSystem flyEffect;
@@ -49,12 +47,10 @@ public class FireballAttack : MonoBehaviour
     {
         var hits = Physics2D.OverlapCircleAll(transform.position, explosionRadius);
 
-        for(int i=0; i<hits.Length; i++)
+        for (int i = 0; i < hits.Length; i++)
         {
-            Debug.Log(hits[i].name);
             if (hits[i].TryGetComponent<Player>(out Player p))
             {
-                Debug.Log("player " + p.PlayerName + " was hit by Explosion");
                 p.ReceiveDamage(damage);
                 var dir = (Vector2)((p.transform.position - transform.position).normalized);
                 p.GetComponent<PlayerController>().AddExternalVelocity(dir * explosionKnockback);

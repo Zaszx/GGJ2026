@@ -5083,8 +5083,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireWaveAttack
   damage: 25
-  waveKnockback: 25
+  waveKnockback: 35
   growthSpeed: 50
-  targetScale: {x: 3, y: 4, z: 0}
+  targetScale: {x: 4, y: 6, z: 0}
   startEffect: {fileID: 5609330371909831847}
   RB: {fileID: 6485231713674549290}

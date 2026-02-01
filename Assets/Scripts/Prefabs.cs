@@ -6,6 +6,7 @@ public static class Prefabs
     public static GameObject Fireball;
 	public static GameObject FirePit;
     public static GameObject FireWave;
+	public static GameObject FireInferno;
     public static GameObject WaterSweepAttack;
 	public static GameObject WaterLanceAttack;
 	public static GameObject WaterBarrier;
@@ -21,9 +22,9 @@ public static class Prefabs
 		WaterUlti =			Resources.Load<GameObject>("Prefabs/WaterUlti");
 
         Fireball =			Resources.Load<GameObject>("Prefabs/FireBall");
-        FirePit =			Resources.Load<GameObject>("Prefabs/FirePit");
-
         FireWave =			Resources.Load<GameObject>("Prefabs/FireWave");
+        FirePit =			Resources.Load<GameObject>("Prefabs/FirePit");
+		FireInferno =		Resources.Load<GameObject>("Prefabs/FireInferno");
 
         AirBasic =			Resources.Load<GameObject>("Prefabs/AirBasic");
 	}

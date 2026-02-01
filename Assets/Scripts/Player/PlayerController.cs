@@ -199,6 +199,8 @@ public class PlayerController : MonoBehaviour
 				break;
 			case CooldownType.Medium: yield return new WaitForSeconds(stats.MediumSkillCD);
 				break;
+			case CooldownType.Slow: yield return new WaitForSeconds(stats.SlowSkillCD);
+				break;
 		}
 		Debug.Log("Cooldown End");
 		_isOnCooldown = false;

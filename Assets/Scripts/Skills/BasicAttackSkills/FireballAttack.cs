@@ -2,7 +2,7 @@
 using UnityEngine;
 using static UnityEngine.EventSystems.EventTrigger;
 
-public class FireBasicAttackBehaviour : MonoBehaviour
+public class FireballAttack : MonoBehaviour
 {
     [Header("Parameters")]
     [SerializeField] private float damage = 25f;

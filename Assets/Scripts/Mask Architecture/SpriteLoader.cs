@@ -1,95 +1,94 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 
 public class SpriteLoader : MonoBehaviour
 {
 	public static SpriteLoader instance;
 
-	Sprite[] maskCROWNSprites;
-	Sprite[] maskFACESprites;
-	Sprite[] maskTEETHSprites;
+	[SerializeField] Sprite[] MASKS;
+
+	[SerializeField] Sprite[] maskCROWNSprites;
+    [SerializeField] Sprite[] maskFACESprites;
+    [SerializeField] Sprite[] maskTEETHSprites;
 
 
-	private void Awake()
-	{
-		if (instance == null)
-			instance = this;
-        //DontDestroyOnLoad(this);
-		maskCROWNSprites = Resources.LoadAll<Sprite>("Sprites/maskCROWNSpriteAtlas");
-        maskFACESprites = Resources.LoadAll<Sprite>("Sprites/maskFACESpriteAtlas");
-        maskTEETHSprites = Resources.LoadAll<Sprite>("Sprites/maskTEETHSpriteAtlas");
+    void Awake()
+    {
+        if (instance == null)
+            instance = this;
 
-        Debug.Assert(maskTEETHSprites.Length > 0);
-		Debug.Assert(maskFACESprites.Length > 0);
-		Debug.Assert(maskCROWNSprites.Length > 0);
+        maskCROWNSprites = new Sprite[12];
+        maskFACESprites = new Sprite[4];
+        maskTEETHSprites = new Sprite[12];
+
+        PopulateArrays();
     }
 
-	public Sprite GetMaskSpriteByElementAndType(Element element, MaskPieceType type)
-	{
-		switch (type)
-		{
-			case MaskPieceType.Crown:
-				{
-					switch (element)
-					{
-						case Element.Air:
-							return maskCROWNSprites[0];
-						case Element.Water:
-							return maskCROWNSprites[1];
-						case Element.Fire:
-							return maskCROWNSprites[2];
-						case Element.Earth:
-							return maskCROWNSprites[3];
-						default:
-							return null;
-					}
-				}
-			case MaskPieceType.Face:
-				{
-					switch (element)
-					{
-						case Element.Air:
-							return maskFACESprites[0];
-						case Element.Water:
-							return maskFACESprites[1];
-						case Element.Fire:
-							return maskFACESprites[2];
-						case Element.Earth:
-							return maskFACESprites[3];
-						default:
-							return null;
-					}
-				}
-			case MaskPieceType.Teeth:
-				{
-					switch (element)
-					{
-						case Element.Air:
-							return maskTEETHSprites[0];
-						case Element.Water:
-							return maskTEETHSprites[1];
-						case Element.Fire:
-							return maskTEETHSprites[2];
-						case Element.Earth:
-							return maskTEETHSprites[3];
-						default:
-							return null;
-					}
-				}
-			default: return null;
-		}
-	}
 
-	public Sprite[] GetMaskSpritesByType(MaskPieceType type)
-	{
-		switch (type)
-		{
-			case MaskPieceType.Crown:
-				return maskCROWNSprites;
-			case MaskPieceType.Face:
-				return maskFACESprites;
-			case MaskPieceType.Teeth:
-				return maskTEETHSprites;
-			default: return null;
-		}
-	}
+    void PopulateArrays()
+    {
+        MASKS = Resources.LoadAll<Sprite>("Sprites/masks");
+
+        foreach (var s in MASKS)
+        {
+            var parts = s.name.Split('_');
+
+            Element element = (Element)System.Enum.Parse(typeof(Element), parts[1],ignoreCase: true);
+            MaskPieceType type = (MaskPieceType)System.Enum.Parse(typeof(MaskPieceType), parts[2],ignoreCase: true);
+
+            int elementIndex = (int)element;
+
+            if (type == MaskPieceType.Face)
+            {
+                maskFACESprites[elementIndex] = s;
+            }
+            else
+            {
+                int variant = int.Parse(parts[3]);
+                int index = elementIndex * 3 + variant;
+
+                if (type == MaskPieceType.Crown)
+                    maskCROWNSprites[index] = s;
+                else if (type == MaskPieceType.Teeth)
+                    maskTEETHSprites[index] = s;
+            }
+        }
+    }
+
+    public Sprite[] GetMaskSpritesByType(MaskPieceType type)
+    {
+        switch (type)
+        {
+            case MaskPieceType.Crown:
+                return maskCROWNSprites;
+
+            case MaskPieceType.Face:
+                return maskFACESprites;
+
+            case MaskPieceType.Teeth:
+                return maskTEETHSprites;
+
+            default:
+                return null;
+        }
+    }
+
+
+
+    public Sprite GetFace(Element e)
+    {
+        return maskFACESprites[(int)e];
+    }
+
+    public Sprite GetCrown(Element e, int variant = 0)
+    {
+        return maskCROWNSprites[(int)e * 3 + variant];
+    }
+
+    public Sprite GetTeeth(Element e, int variant = 0)
+    {
+        return maskTEETHSprites[(int)e * 3 + variant];
+    }
+
+
 }

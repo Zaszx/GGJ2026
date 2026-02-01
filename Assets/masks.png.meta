@@ -1,0 +1,1249 @@
+fileFormatVersion: 2
+guid: ed88e9bc22b53664e837042350e3934a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9170465507123814600
+    second: maskss_0
+  - first:
+      213: 2493048920789640334
+    second: maskss_1
+  - first:
+      213: 4535893724199678678
+    second: maskss_2
+  - first:
+      213: -6799722397437117130
+    second: maskss_3
+  - first:
+      213: -968485589277557843
+    second: maskss_4
+  - first:
+      213: -2287150635648975304
+    second: maskss_5
+  - first:
+      213: -6876697971436204350
+    second: maskss_6
+  - first:
+      213: 720015002594971079
+    second: maskss_7
+  - first:
+      213: 2076149121757471958
+    second: maskss_8
+  - first:
+      213: -4608051543124465204
+    second: maskss_9
+  - first:
+      213: 9094432874398685415
+    second: maskss_10
+  - first:
+      213: 7809191895742800744
+    second: maskss_11
+  - first:
+      213: 4733266938866314671
+    second: maskss_12
+  - first:
+      213: -4115770922333854776
+    second: maskss_13
+  - first:
+      213: 9162968186087666972
+    second: maskss_14
+  - first:
+      213: -5170820347110494985
+    second: maskss_15
+  - first:
+      213: -499665568100502933
+    second: maskss_16
+  - first:
+      213: -8280158304415000270
+    second: maskss_17
+  - first:
+      213: 7416321613443414346
+    second: maskss_18
+  - first:
+      213: -4241798242781337671
+    second: maskss_19
+  - first:
+      213: -8487275177474798185
+    second: maskss_20
+  - first:
+      213: 2978873174723952315
+    second: maskss_21
+  - first:
+      213: -1084435345729390621
+    second: maskss_22
+  - first:
+      213: 3181694678889244344
+    second: maskss_23
+  - first:
+      213: 4747428580182663158
+    second: maskss_24
+  - first:
+      213: 5298254453719673301
+    second: maskss_25
+  - first:
+      213: -1202515036933790516
+    second: maskss_26
+  - first:
+      213: 5101281991572189081
+    second: maskss_27
+  - first:
+      213: -6551621162530080256
+    second: maskss_28
+  - first:
+      213: 3699286125723247088
+    second: maskss_29
+  - first:
+      213: 7290084240371613319
+    second: maskss_30
+  - first:
+      213: 5661288684183451754
+    second: maskss_31
+  - first:
+      213: -3384755351182058133
+    second: maskss_32
+  - first:
+      213: -2271328816935030161
+    second: maskss_33
+  - first:
+      213: -2415510065766321100
+    second: maskss_34
+  - first:
+      213: 3565428085243794040
+    second: maskss_35
+  - first:
+      213: 3859938149765340336
+    second: maskss_36
+  - first:
+      213: -7969290410637345965
+    second: maskss_37
+  - first:
+      213: 5819631379889299793
+    second: maskss_38
+  - first:
+      213: 4133442624786086766
+    second: maskss_39
+  - first:
+      213: -4986020252116709508
+    second: maskss_40
+  - first:
+      213: 3275954130346059003
+    second: maskss_41
+  - first:
+      213: 2663365734642949478
+    second: maskss_42
+  - first:
+      213: 4687176174170111036
+    second: maskss_43
+  - first:
+      213: 2707111804887118348
+    second: maskss_44
+  - first:
+      213: 8939439073997636831
+    second: maskss_45
+  - first:
+      213: 3297494892273146501
+    second: maskss_46
+  - first:
+      213: -2537392243302717530
+    second: maskss_47
+  - first:
+      213: -2407780397228051121
+    second: maskss_48
+  - first:
+      213: 1356263094949961041
+    second: maskss_49
+  - first:
+      213: -7579476962148073725
+    second: maskss_50
+  - first:
+      213: 3370382322708671118
+    second: maskss_51
+  - first:
+      213: 7437962247256262058
+    second: maskss_52
+  - first:
+      213: -6682012149378772393
+    second: maskss_53
+  - first:
+      213: -5243481875529668924
+    second: maskss_54
+  - first:
+      213: 8440547207867699849
+    second: maskss_55
+  - first:
+      213: 3809331596556024304
+    second: maskss_56
+  - first:
+      213: -3975143669540256305
+    second: maskss_57
+  - first:
+      213: -2304778102318282839
+    second: maskss_58
+  - first:
+      213: 8871894914778418255
+    second: maskss_59
+  - first:
+      213: -3943653378470440638
+    second: maskss_60
+  - first:
+      213: 7158812616969186904
+    second: maskss_61
+  - first:
+      213: 6595030334798437843
+    second: maskss_62
+  - first:
+      213: -4033647300374956878
+    second: maskss_63
+  - first:
+      213: -1031993292172574126
+    second: maskss_64
+  - first:
+      213: -3778967650777165277
+    second: maskss_65
+  - first:
+      213: 90852837811719495
+    second: maskss_66
+  - first:
+      213: 5531080152253347183
+    second: maskss_67
+  - first:
+      213: 7962296163699675334
+    second: maskss_68
+  - first:
+      213: 1582056594933764895
+    second: maskss_69
+  - first:
+      213: -8677296008126792616
+    second: maskss_70
+  - first:
+      213: -4392976773544873013
+    second: maskss_71
+  - first:
+      213: -5970362987660818579
+    second: maskss_72
+  - first:
+      213: -2014661971563354743
+    second: maskss_73
+  - first:
+      213: -7694873543156827376
+    second: maskss_74
+  - first:
+      213: -2100867593657973792
+    second: maskss_75
+  - first:
+      213: -6856838715919995507
+    second: maskss_76
+  - first:
+      213: -4621426689211547558
+    second: maskss_77
+  - first:
+      213: -4748128534235980578
+    second: maskss_78
+  - first:
+      213: -8558529168375882189
+    second: maskss_79
+  - first:
+      213: -7975991175937922832
+    second: maskss_80
+  - first:
+      213: -918422588933977112
+    second: maskss_81
+  - first:
+      213: 2176271572047010006
+    second: maskss_82
+  - first:
+      213: 7832537059089470426
+    second: maskss_83
+  - first:
+      213: -940538045195380385
+    second: maskss_84
+  - first:
+      213: -8923152927962252485
+    second: maskss_85
+  - first:
+      213: 1193605091366447687
+    second: maskss_86
+  - first:
+      213: -5851129328653456405
+    second: maskss_87
+  - first:
+      213: 5721556424571927976
+    second: maskss_88
+  - first:
+      213: 3517411057021884760
+    second: maskss_89
+  - first:
+      213: -6078781040014038145
+    second: maskss_90
+  - first:
+      213: -4974321351140162265
+    second: maskss_91
+  - first:
+      213: -1310699231051027557
+    second: maskss_92
+  - first:
+      213: 2910169948495794400
+    second: maskss_93
+  - first:
+      213: -8672370388364606430
+    second: maskss_94
+  - first:
+      213: 618708790913448111
+    second: maskss_95
+  - first:
+      213: 4472123831484030105
+    second: maskss_96
+  - first:
+      213: 7117972059181235512
+    second: maskss_97
+  - first:
+      213: -5801106560191647521
+    second: maskss_98
+  - first:
+      213: 2657966095412053453
+    second: maskss_99
+  - first:
+      213: 2944847723769129212
+    second: maskss_100
+  - first:
+      213: -4000603407791226382
+    second: maskss_101
+  - first:
+      213: 7554642509021801251
+    second: maskss_102
+  - first:
+      213: -2336741247691606199
+    second: maskss_103
+  - first:
+      213: -5290895127610744786
+    second: maskss_104
+  - first:
+      213: -5824031900263297194
+    second: maskss_105
+  - first:
+      213: 3145661051302076301
+    second: maskss_106
+  - first:
+      213: 4688607486343007732
+    second: maskss_107
+  - first:
+      213: -6560761351119582714
+    second: maskss_108
+  - first:
+      213: 2493954687749928922
+    second: maskss_109
+  - first:
+      213: -5053307518327614654
+    second: maskss_110
+  - first:
+      213: -2002162272273017447
+    second: maskss_111
+  - first:
+      213: 5086704543520429924
+    second: maskss_112
+  - first:
+      213: -3339201408548077605
+    second: maskss_113
+  - first:
+      213: 6178481231540329365
+    second: maskss_114
+  - first:
+      213: 4482784156384305371
+    second: maskss_115
+  - first:
+      213: -5826133196274977263
+    second: maskss_116
+  - first:
+      213: 8470496148839717702
+    second: maskss_117
+  - first:
+      213: -353003612269562177
+    second: maskss_118
+  - first:
+      213: -2812095512434023477
+    second: maskss_119
+  - first:
+      213: 6673736635395305733
+    second: maskss_120
+  - first:
+      213: -7148056762782529381
+    second: maskss_121
+  - first:
+      213: 4772856378581332697
+    second: maskss_122
+  - first:
+      213: -3495574226866514779
+    second: maskss_123
+  - first:
+      213: 1967927443037067369
+    second: maskss_124
+  - first:
+      213: 8724431203053778755
+    second: maskss_125
+  - first:
+      213: -3792050999490339824
+    second: maskss_126
+  - first:
+      213: 6140910883488272885
+    second: maskss_127
+  - first:
+      213: 7461446467032978151
+    second: maskss_128
+  - first:
+      213: -7073324817699869374
+    second: maskss_129
+  - first:
+      213: 3125051780882688446
+    second: maskss_130
+  - first:
+      213: -6931248166922631424
+    second: maskss_131
+  - first:
+      213: 1695109096847230708
+    second: maskss_132
+  - first:
+      213: -7508923067829530157
+    second: maskss_133
+  - first:
+      213: 5417903846227019017
+    second: maskss_134
+  - first:
+      213: 6566056654134656013
+    second: maskss_135
+  - first:
+      213: -4383102965221652812
+    second: maskss_136
+  - first:
+      213: -4547422281054961867
+    second: maskss_137
+  - first:
+      213: 6404876711055533942
+    second: maskss_138
+  - first:
+      213: 6434869835555253854
+    second: maskss_139
+  - first:
+      213: 1278432233064738320
+    second: maskss_140
+  - first:
+      213: -2955198680066866668
+    second: maskss_141
+  - first:
+      213: -1079843468865545901
+    second: maskss_142
+  - first:
+      213: -8680727172371389711
+    second: maskss_143
+  - first:
+      213: 4687766229885521483
+    second: maskss_144
+  - first:
+      213: 3378960984367370075
+    second: maskss_145
+  - first:
+      213: -8335935464760015570
+    second: maskss_146
+  - first:
+      213: 3745343222434085621
+    second: maskss_147
+  - first:
+      213: 6075094053830893195
+    second: maskss_148
+  - first:
+      213: 2692287352549567784
+    second: maskss_149
+  - first:
+      213: 4154833418212527078
+    second: maskss_150
+  - first:
+      213: 1125527653435321811
+    second: maskss_151
+  - first:
+      213: 324754475918585505
+    second: maskss_152
+  - first:
+      213: -5022830136328077129
+    second: maskss_153
+  - first:
+      213: -7501380849462794305
+    second: maskss_154
+  - first:
+      213: 8359232626137638004
+    second: maskss_155
+  - first:
+      213: -6136713476536024374
+    second: maskss_156
+  - first:
+      213: 6755577964945420171
+    second: maskss_157
+  - first:
+      213: -7194240382506146316
+    second: maskss_158
+  - first:
+      213: 5684162726512975885
+    second: maskss_159
+  - first:
+      213: 9086840348567422186
+    second: maskss_160
+  - first:
+      213: -3061382600657431619
+    second: maskss_161
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 400
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 3_EARTH_FACE
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 10549
+        width: 800
+        height: 1246
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c06611aac9044f70800000000000000
+      internalID: 9170465507123814600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 13_EARTH_CROWN_0
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 10798
+        width: 1077
+        height: 1050
+      alignment: 9
+      pivot: {x: 0.5, y: -0.375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf56ce7debd469f499bbf10a9a6aa27e
+      internalID: 174466861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 13_EARTH_CROWN_1
+      rect:
+        serializedVersion: 2
+        x: 2630
+        y: 10745
+        width: 1162
+        height: 1117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85569c1035651954ba4465f8de09a397
+      internalID: 618386393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 13_EARTH_CROWN_2
+      rect:
+        serializedVersion: 2
+        x: 3836
+        y: 10108
+        width: 1064
+        height: 1811
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa0b2854afc76404794ab641b00a0cf6
+      internalID: -1074227807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 103_EARTH_TEETH_0
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 9543
+        width: 800
+        height: 979
+      alignment: 9
+      pivot: {x: 0.5, y: 1.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04b99a1d72e8d85499adb3534d609a3a
+      internalID: -1389107346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 103_EARTH_TEETH_1
+      rect:
+        serializedVersion: 2
+        x: 1487
+        y: 9645
+        width: 800
+        height: 935
+      alignment: 9
+      pivot: {x: 0.5, y: 1.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 869a530ba1fd6194e9c121096976f8a7
+      internalID: -188360526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 103_EARTH_TEETH_2
+      rect:
+        serializedVersion: 2
+        x: 2443
+        y: 9605
+        width: 1000
+        height: 989
+      alignment: 9
+      pivot: {x: 0.5, y: 1.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e6f697ec32265949811ed4f4ef6f3c2
+      internalID: 934916713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1_WATER_FACE
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 8575
+        width: 800
+        height: 785
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aa2866ab246bb74e8417dcd2ea7ed37
+      internalID: 1793754939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 11_WATER_CROWN_0
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 7665
+        width: 1669
+        height: 1874
+      alignment: 9
+      pivot: {x: 0.5, y: -0.375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2aed4dbcdc19ab44da682f7f601d5caf
+      internalID: 2054924136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 11_WATER_CROWN_1
+      rect:
+        serializedVersion: 2
+        x: 3084
+        y: 7714
+        width: 1718
+        height: 1834
+      alignment: 9
+      pivot: {x: 0.5, y: -0.375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7c23d4f34ea3094badc1a1569831f32
+      internalID: 576514824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 11_WATER_CROWN_2
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 6663
+        width: 1636
+        height: 974
+      alignment: 9
+      pivot: {x: 0.5, y: -0.375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 205ed942bb94ef742bac49cad7771957
+      internalID: -856215698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 101_WATER_TEETH_0
+      rect:
+        serializedVersion: 2
+        x: 1826
+        y: 6560
+        width: 1221
+        height: 1079
+      alignment: 9
+      pivot: {x: 0.5, y: 1.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bfe302270d958d45a4af17f75191764
+      internalID: 249517097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 101_WATER_TEETH_1
+      rect:
+        serializedVersion: 2
+        x: 3067
+        y: 6601
+        width: 931
+        height: 999
+      alignment: 9
+      pivot: {x: 0.5, y: 1.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5892baf711c1f9e42b1c4ec36c8a9846
+      internalID: 300055036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 101_WATER_TEETH_2
+      rect:
+        serializedVersion: 2
+        x: 4047
+        y: 6533
+        width: 833
+        height: 1045
+      alignment: 9
+      pivot: {x: 0.5, y: 1.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cdd94b8327430447b1f33819549a860
+      internalID: 303507316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2_FIRE_FACE
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 5409
+        width: 800
+        height: 948
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c9384d8ce8f02a4c89d74bdf46dab91
+      internalID: -249832251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 12_FIRE_CROWN_0
+      rect:
+        serializedVersion: 2
+        x: 1331
+        y: 5053
+        width: 1846
+        height: 1442
+      alignment: 9
+      pivot: {x: 0.5, y: -0.375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98ae73a3589e4c1489821b596e5b6b3a
+      internalID: 681579118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 12_FIRE_CROWN_1
+      rect:
+        serializedVersion: 2
+        x: 3275
+        y: 5008
+        width: 1647
+        height: 1480
+      alignment: 9
+      pivot: {x: 0.5, y: -0.375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 527bf0fc4c302ea4c821cc76220824fa
+      internalID: -423866069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 12_FIRE_CROWN_2
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 3454
+        width: 2073
+        height: 1509
+      alignment: 9
+      pivot: {x: 0.5, y: -0.375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 882febe6599110343bd8321675071a26
+      internalID: 2085525301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 102_FIRE_TEETH_0
+      rect:
+        serializedVersion: 2
+        x: 2283
+        y: 3989
+        width: 734
+        height: 657
+      alignment: 9
+      pivot: {x: 0.5, y: 1.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1345c14aed51e64ab0853acf75d4b57
+      internalID: 1780343190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 102_FIRE_TEETH_1
+      rect:
+        serializedVersion: 2
+        x: 3075
+        y: 3760
+        width: 668
+        height: 911
+      alignment: 9
+      pivot: {x: 0.5, y: 1.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b403eccb1ccb31043a197066f8eb9dde
+      internalID: -938158434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 102_FIRE_TEETH_2
+      rect:
+        serializedVersion: 2
+        x: 3892
+        y: 3790
+        width: 955
+        height: 925
+      alignment: 9
+      pivot: {x: 0.5, y: 1.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd501a7ca99af7d4d8048588bae801ec
+      internalID: 893377399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 0_AIR_FACE
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 2290
+        width: 800
+        height: 1000
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06f6b146529dd114e85c217d18c0cbb4
+      internalID: -677495358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 10_AIR_CROWN_0
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 2150
+        width: 1800
+        height: 1300
+      alignment: 9
+      pivot: {x: 0.5, y: -0.375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fafffd2e5964de14c8583008a946efe2
+      internalID: 867024848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 10_AIR_CROWN_1
+      rect:
+        serializedVersion: 2
+        x: 3485
+        y: 2300
+        width: 1115
+        height: 1100
+      alignment: 9
+      pivot: {x: 0.5, y: -0.375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73c287589a8d95841b90d927a444ceaf
+      internalID: 1831487621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 10_AIR_CROWN_2
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 1020
+        width: 885
+        height: 885
+      alignment: 9
+      pivot: {x: 0.5, y: -0.375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e287521c0b750d40833c25a4dbbae0d
+      internalID: -1743948532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_AIR_TEETH_0
+      rect:
+        serializedVersion: 2
+        x: 1803
+        y: 1180
+        width: 580
+        height: 645
+      alignment: 9
+      pivot: {x: 0.5, y: 1.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59fa1c1337a8e9c45b06623c5b93e911
+      internalID: -2101412810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_AIR_TEETH_1
+      rect:
+        serializedVersion: 2
+        x: 2718
+        y: 1196
+        width: 990
+        height: 600
+      alignment: 9
+      pivot: {x: 0.5, y: 1.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f3df961b39f54a42af6a93a6c772f66
+      internalID: -185691648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 100_AIR_TEETH_2
+      rect:
+        serializedVersion: 2
+        x: 3882
+        y: 1203
+        width: 632
+        height: 900
+      alignment: 9
+      pivot: {x: 0.5, y: 1.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 035743b75a612fc4aa65bc0d1d2b0be3
+      internalID: -1869695762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: edb47466a17987f4bb689d1ccca32702
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":4961.0,"y":12000.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      0_AIR_FACE: -677495358
+      100_AIR_TEETH_0: -2101412810
+      100_AIR_TEETH_1: -185691648
+      100_AIR_TEETH_2: -1869695762
+      101_WATER_TEETH_0: 249517097
+      101_WATER_TEETH_1: 300055036
+      101_WATER_TEETH_2: 303507316
+      102_FIRE_TEETH_0: 1780343190
+      102_FIRE_TEETH_1: -938158434
+      102_FIRE_TEETH_2: 893377399
+      103_EARTH_TEETH_0: -1389107346
+      103_EARTH_TEETH_1: -188360526
+      103_EARTH_TEETH_2: 934916713
+      10_AIR_CROWN_0: 867024848
+      10_AIR_CROWN_1: 1831487621
+      10_AIR_CROWN_2: -1743948532
+      11_WATER_CROWN_0: 2054924136
+      11_WATER_CROWN_1: 576514824
+      11_WATER_CROWN_2: -856215698
+      12_FIRE_CROWN_0: 681579118
+      12_FIRE_CROWN_1: -423866069
+      12_FIRE_CROWN_2: 2085525301
+      13_EARTH_CROWN_0: 174466861
+      13_EARTH_CROWN_1: 618386393
+      13_EARTH_CROWN_2: -1074227807
+      1_WATER_FACE: 1793754939
+      2_FIRE_FACE: -249832251
+      3_EARTH_FACE: 9170465507123814600
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

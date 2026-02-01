@@ -23,14 +23,14 @@ public class MaskSelector : MonoBehaviour
 		midSelector.Init(midPiece);
 		bottomSelector.Init(bottomPiece);
 
-		titleText.text = "Player 1's turn\nPlayer 2, look the fuck away!";
+		titleText.text = "Player 1's turn\nPlayer 2, look away!";
 	}
 
 	public void ReadyClicked()
 	{
 		if (playerOneTurn)
 		{
-			titleText.text = "Player 2's turn\nPlayer 1, look the fuck away!";
+			titleText.text = "Player 2's turn\nPlayer 1, look away!";
 			playerOneTurn = false;
 
 			PlayerMaskSelections.Player1Top = topSelector.GetSelectedIndex();

@@ -43,7 +43,21 @@ public class MaskPartSelector : MonoBehaviour
 	}
 	public MaskPiece GetMaskPiece()
 	{
-		_maskPiece.element = (Element)selectedIndex;
+		if(_maskPiece.type ==  MaskPieceType.Face)
+		{
+			_maskPiece.element = (Element)selectedIndex;
+		}
+		else
+		{
+            _maskPiece.element = selectedIndex switch
+            {
+                0 or 1 or 2 => Element.Air,
+                3 or 4 or 5 => Element.Water,
+                6 or 7 or 8 => Element.Fire,
+                9 or 10 or 11 => Element.Earth,
+                _ => Element.Air,
+            };
+        }
 		return _maskPiece;
 	}
 }

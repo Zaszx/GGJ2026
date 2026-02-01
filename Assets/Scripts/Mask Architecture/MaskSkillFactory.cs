@@ -63,7 +63,7 @@ public static class MaskSkillFactory
             Element.Air =>      new AirBasicAttack(),
             Element.Water =>    new WaterBasicAttack(Prefabs.WaterSweepAttack),
             Element.Fire =>     new FireBasicAttackSkill(Prefabs.Fireball),
-            Element.Earth =>    new ExampleBasicAttack(),
+            Element.Earth =>    new ExampleBasicAttack(),   
             _ => new ExampleBasicAttack(),
         };
         return new SkillInstance(skill);
@@ -75,7 +75,7 @@ public static class MaskSkillFactory
 		{
 			Element.Air => new ExampleBasicAttack(),
 			Element.Water => new WaterHeavyAttack(Prefabs.WaterLanceAttack),
-			Element.Fire => new ExampleBasicAttack(),
+			Element.Fire => new FireHeavyAttack(Prefabs.FireWave),
 			Element.Earth => new ExampleBasicAttack(),
 			_ => new ExampleBasicAttack(),
 		};

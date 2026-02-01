@@ -19,7 +19,7 @@ public class FireballAttack : MonoBehaviour
 
     private Player _owner;
 
-    public void Shoot(Vector3 castPos, Vector2 dir, Player owner)
+    public void Cast(Vector3 castPos, Vector2 dir, Player owner)
     {
         transform.position = castPos;
         RB.linearVelocity = dir * speed;
@@ -53,7 +53,7 @@ public class FireballAttack : MonoBehaviour
             if (hits[i].TryGetComponent<Player>(out Player p))
             {
                 Debug.Log("player " + p.PlayerName + " was hit by Explosion");
-                //p.TakeDamage(damage);
+                p.ReceiveDamage(damage);
                 var dir = (Vector2)((p.transform.position - transform.position).normalized);
                 p.GetComponent<PlayerController>().AddExternalVelocity(dir * explosionKnockback);
             }

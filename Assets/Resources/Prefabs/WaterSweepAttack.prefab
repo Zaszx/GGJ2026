@@ -104,6 +104,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WaterSweepAttack
   sweepDegrees: 45
-  duration: 1
+  duration: 0.4
   radius: 0.8
   destroyAfter: 1

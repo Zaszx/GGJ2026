@@ -1,0 +1,917 @@
+fileFormatVersion: 2
+guid: 0198b49361da5e449b6113f33d046b0f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 328963226045101611
+    second: map area object_0
+  - first:
+      213: 4055797035549527712
+    second: map area object_1
+  - first:
+      213: 3182979436018831829
+    second: map area object_2
+  - first:
+      213: -8460680886230162980
+    second: map area object_3
+  - first:
+      213: 8250118198009704552
+    second: map area object_4
+  - first:
+      213: 3912410846724821010
+    second: map area object_5
+  - first:
+      213: -5464055613942314130
+    second: map area object_6
+  - first:
+      213: 76277293957967159
+    second: map area object_7
+  - first:
+      213: 7714442882256759088
+    second: map area object_8
+  - first:
+      213: 683416294756525675
+    second: map area object_9
+  - first:
+      213: 3932513914760173107
+    second: map area object_10
+  - first:
+      213: -3099874771169140206
+    second: map area object_11
+  - first:
+      213: -7305540217761387235
+    second: map area object_12
+  - first:
+      213: -3279291568512557890
+    second: map area object_13
+  - first:
+      213: 6929631500224750996
+    second: map area object_14
+  - first:
+      213: 1458429113674221628
+    second: map area object_15
+  - first:
+      213: -4846640535439772647
+    second: map area object_16
+  - first:
+      213: 8266238727804797149
+    second: map area object_17
+  - first:
+      213: -4140275668831482176
+    second: map area object_18
+  - first:
+      213: -5664161279068222483
+    second: map area object_19
+  - first:
+      213: 4604795097786866779
+    second: map area object_20
+  - first:
+      213: 515785413803103173
+    second: map area object_21
+  - first:
+      213: 5359532962123060439
+    second: map area object_22
+  - first:
+      213: 2147939393507810073
+    second: map area object_23
+  - first:
+      213: 2378503269065560045
+    second: map area object_24
+  - first:
+      213: -7382551897505544327
+    second: map area object_25
+  - first:
+      213: 640125939221001724
+    second: map area object_26
+  - first:
+      213: -8124667587034055394
+    second: map area object_27
+  - first:
+      213: -7143891945052381002
+    second: map area object_28
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: map area object_0
+      rect:
+        serializedVersion: 2
+        x: 1619
+        y: 3224
+        width: 1147
+        height: 560
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b26b598af46b09400800000000000000
+      internalID: 328963226045101611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map area object_1
+      rect:
+        serializedVersion: 2
+        x: 3125
+        y: 2616
+        width: 820
+        height: 1188
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ae03015ae5194830800000000000000
+      internalID: 4055797035549527712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map area object_2
+      rect:
+        serializedVersion: 2
+        x: 4220
+        y: 3594
+        width: 285
+        height: 280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d19643dee63c2c20800000000000000
+      internalID: 3182979436018831829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map area object_3
+      rect:
+        serializedVersion: 2
+        x: 4213
+        y: 3111
+        width: 307
+        height: 461
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd160528f8f959a80800000000000000
+      internalID: -8460680886230162980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map area object_4
+      rect:
+        serializedVersion: 2
+        x: 1336
+        y: 2382
+        width: 783
+        height: 609
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 860ba534ace4e7270800000000000000
+      internalID: 8250118198009704552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map area object_5
+      rect:
+        serializedVersion: 2
+        x: 2661
+        y: 2307
+        width: 279
+        height: 763
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2101b6eafecab4630800000000000000
+      internalID: 3912410846724821010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map area object_6
+      rect:
+        serializedVersion: 2
+        x: 4375
+        y: 2720
+        width: 36
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6b4df17e56cb24b0800000000000000
+      internalID: -5464055613942314130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map area object_7
+      rect:
+        serializedVersion: 2
+        x: 4398
+        y: 2761
+        width: 27
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73deac27bcdfe0100800000000000000
+      internalID: 76277293957967159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map area object_8
+      rect:
+        serializedVersion: 2
+        x: 4456
+        y: 2761
+        width: 11
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03964f4bde43f0b60800000000000000
+      internalID: 7714442882256759088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map area object_9
+      rect:
+        serializedVersion: 2
+        x: 4488
+        y: 2775
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b662daacf7bfb7900800000000000000
+      internalID: 683416294756525675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map area object_10
+      rect:
+        serializedVersion: 2
+        x: 4355
+        y: 2751
+        width: 24
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3369f83f198139630800000000000000
+      internalID: 3932513914760173107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map area object_11
+      rect:
+        serializedVersion: 2
+        x: 4296
+        y: 2578
+        width: 207
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 212a448c1580bf4d0800000000000000
+      internalID: -3099874771169140206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map area object_12
+      rect:
+        serializedVersion: 2
+        x: 4516
+        y: 2586
+        width: 46
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1da00cd0e18d9a90800000000000000
+      internalID: -7305540217761387235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map area object_13
+      rect:
+        serializedVersion: 2
+        x: 4563
+        y: 2586
+        width: 52
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebc10ef51bd9d72d0800000000000000
+      internalID: -3279291568512557890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map area object_14
+      rect:
+        serializedVersion: 2
+        x: 4628
+        y: 2586
+        width: 30
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 495e04b722ffa2060800000000000000
+      internalID: 6929631500224750996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map area object_15
+      rect:
+        serializedVersion: 2
+        x: 4661
+        y: 2586
+        width: 52
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c38c3a24d816d3410800000000000000
+      internalID: 1458429113674221628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map area object_16
+      rect:
+        serializedVersion: 2
+        x: 4218
+        y: 2527
+        width: 42
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9147a139c164dbcb0800000000000000
+      internalID: -4846640535439772647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map area object_17
+      rect:
+        serializedVersion: 2
+        x: 4281
+        y: 2524
+        width: 24
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd0c167935497b270800000000000000
+      internalID: 8266238727804797149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map area object_18
+      rect:
+        serializedVersion: 2
+        x: 4725
+        y: 2535
+        width: 62
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ce4b1f1739ca86c0800000000000000
+      internalID: -4140275668831482176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map area object_19
+      rect:
+        serializedVersion: 2
+        x: 4370
+        y: 2514
+        width: 124
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: debcd92a35bd461b0800000000000000
+      internalID: -5664161279068222483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map area object_20
+      rect:
+        serializedVersion: 2
+        x: 4542
+        y: 2523
+        width: 16
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5cdb038eb487ef30800000000000000
+      internalID: 4604795097786866779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map area object_21
+      rect:
+        serializedVersion: 2
+        x: 4659
+        y: 2515
+        width: 27
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c3df02e910782700800000000000000
+      internalID: 515785413803103173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map area object_22
+      rect:
+        serializedVersion: 2
+        x: 4614
+        y: 2507
+        width: 43
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d4975145d2e06a40800000000000000
+      internalID: 5359532962123060439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map area object_23
+      rect:
+        serializedVersion: 2
+        x: 4393
+        y: 2442
+        width: 43
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91bd9158f730fcd10800000000000000
+      internalID: 2147939393507810073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map area object_24
+      rect:
+        serializedVersion: 2
+        x: 4534
+        y: 2449
+        width: 124
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: def02c11f14220120800000000000000
+      internalID: 2378503269065560045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map area object_25
+      rect:
+        serializedVersion: 2
+        x: 4713
+        y: 2443
+        width: 22
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 977cb45e928eb8990800000000000000
+      internalID: -7382551897505544327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map area object_26
+      rect:
+        serializedVersion: 2
+        x: 2130
+        y: 1825
+        width: 499
+        height: 241
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf5f7c2762f22e800800000000000000
+      internalID: 640125939221001724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map area object_27
+      rect:
+        serializedVersion: 2
+        x: 3435
+        y: 1894
+        width: 430
+        height: 343
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1d74bc30e16f3f80800000000000000
+      internalID: -8124667587034055394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map area object_28
+      rect:
+        serializedVersion: 2
+        x: 2999
+        y: 719
+        width: 1473
+        height: 936
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b0e06d302ccbdc90800000000000000
+      internalID: -7143891945052381002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map area object_29
+      rect:
+        serializedVersion: 2
+        x: 4393
+        y: 2754
+        width: 134
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4b0badbc5e81f44d86f34420be0e476
+      internalID: 105923391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map area object_30
+      rect:
+        serializedVersion: 2
+        x: 4217
+        y: 2439
+        width: 572
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a370ba683033efe4ab39a236dcd99370
+      internalID: 1734994966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 62cb38de0db90a046b03d7bc9e342cf0
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      map area object_0: 328963226045101611
+      map area object_1: 4055797035549527712
+      map area object_10: 3932513914760173107
+      map area object_11: -3099874771169140206
+      map area object_12: -7305540217761387235
+      map area object_13: -3279291568512557890
+      map area object_14: 6929631500224750996
+      map area object_15: 1458429113674221628
+      map area object_16: -4846640535439772647
+      map area object_17: 8266238727804797149
+      map area object_18: -4140275668831482176
+      map area object_19: -5664161279068222483
+      map area object_2: 3182979436018831829
+      map area object_20: 4604795097786866779
+      map area object_21: 515785413803103173
+      map area object_22: 5359532962123060439
+      map area object_23: 2147939393507810073
+      map area object_24: 2378503269065560045
+      map area object_25: -7382551897505544327
+      map area object_26: 640125939221001724
+      map area object_27: -8124667587034055394
+      map area object_28: -7143891945052381002
+      map area object_29: 105923391
+      map area object_3: -8460680886230162980
+      map area object_30: 1734994966
+      map area object_4: 8250118198009704552
+      map area object_5: 3912410846724821010
+      map area object_6: -5464055613942314130
+      map area object_7: 76277293957967159
+      map area object_8: 7714442882256759088
+      map area object_9: 683416294756525675
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

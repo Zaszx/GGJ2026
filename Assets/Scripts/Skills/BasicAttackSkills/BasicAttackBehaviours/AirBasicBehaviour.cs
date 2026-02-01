@@ -8,6 +8,7 @@ namespace Skills.BasicAttackSkills.BasicAttackBehaviours
         private Rigidbody2D _rb;
         private Collider2D _col;
         private const float KnockbackForce = 10f;
+        private const float Damage = 2.5f;
         public string SourceTag { get; set; }
 
         private void Start()
@@ -24,6 +25,7 @@ namespace Skills.BasicAttackSkills.BasicAttackBehaviours
                 if (hitPlayer != null && !other.gameObject.CompareTag(SourceTag))
                 {
                     hitPlayer.ApplyKnockback(_rb.linearVelocity.normalized, KnockbackForce, SourceTag);
+                    hitPlayer.PlayerScript.ReceiveDamage(Damage);
                     Destroy(gameObject);
                 }
             }

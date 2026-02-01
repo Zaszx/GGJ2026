@@ -8,8 +8,9 @@ namespace Skills.UltiSkills.Behaviour
         public GameObject Target { get; set; }
         public Vector2 Origin { get; set; }
         private const float Speed = 5f;
-        private const float PullForce = 0.8f;
+        private const float PullForce = 0.7f;
         private const float PullRadius = 5f;
+        private const float Damage = 25f;
         private Rigidbody2D _rb;
         private Vector2 _direction;
 
@@ -33,6 +34,15 @@ namespace Skills.UltiSkills.Behaviour
                 {
                     hit.gameObject.GetComponent<PlayerController>().AddExternalVelocity((transform.position - hit.transform.position).normalized * PullForce);
                 }
+            }
+        }
+
+        private void OnTriggerEnter2D(Collider2D other)
+        {
+            if (other.CompareTag(Target.tag))
+            {
+                other.GetComponent<Player>().ReceiveDamage(Damage);
+                Destroy(gameObject);
             }
         }
 

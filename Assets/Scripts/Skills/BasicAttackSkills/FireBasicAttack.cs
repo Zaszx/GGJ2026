@@ -15,7 +15,7 @@ public class FireBasicAttackSkill : ISkill
         Vector2 dir = GameManager.Instance.GetFiringDirectionForPlayer(user);
 
         GameObject.Instantiate(fireballPrefab, user.transform.position, Quaternion.identity)
-            .GetComponent<FireballAttack>().Cast(user.transform.position, dir,user);
+            .GetComponent<FireballAttack>().Cast(user.transform.position, dir, user);
         Debug.Log("Player " + user.PlayerName + " used FireBasicAttackSkill");
     }
 

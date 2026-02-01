@@ -21,7 +21,9 @@ public class FireballAttack : MonoBehaviour
 
     public void Cast(Vector3 castPos, Vector2 dir, Player owner)
     {
+        transform.right = dir;
         transform.position = castPos;
+
         RB.linearVelocity = dir * speed;
         _owner = owner;
         IgnoreOwnerCollision();

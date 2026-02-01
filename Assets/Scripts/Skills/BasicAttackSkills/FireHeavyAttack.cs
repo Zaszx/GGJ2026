@@ -14,8 +14,9 @@ public class FireHeavyAttack : ISkill
     public void Use(Player user)
     {
         Vector2 dir = GameManager.Instance.GetFiringDirectionForPlayer(user);
-        GameObject.Instantiate(fireWavePrefab, user.transform.position, Quaternion.identity);
-        fireWavePrefab.GetComponent<FireWaveAttack>().Cast(user,dir,user.transform.position);
+
+        GameObject.Instantiate(fireWavePrefab, user.transform.position, Quaternion.identity)
+            .GetComponent<FireWaveAttack>().Cast(user,dir,user.transform.position);
         Debug.Log("Player " + user.PlayerName + " used FireHeavySkill");
 
     }

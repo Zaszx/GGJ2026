@@ -22,6 +22,7 @@ public class FireWaveAttack : MonoBehaviour
         _owner = user;
 
         transform.position = castPos;
+        transform.right = dir;
 
 
         IgnoreOwnerCollision();

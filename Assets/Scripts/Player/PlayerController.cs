@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour
 	
 	private Rigidbody2D _rb;
 	private SkillController _skillController;
-
+	
 	[Header("Movement")]
 	[SerializeField] private float moveSpeed = 5f;
 	//[SerializeField] private bool normalizeDiagonal = true;

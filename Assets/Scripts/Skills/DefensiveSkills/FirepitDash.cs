@@ -47,7 +47,7 @@ public class FirepitDash : MonoBehaviour
     {
         if(collision.TryGetComponent(out Player p))
         {
-            p.ReceiveDamage(damageOverTime * Time.fixedDeltaTime);
+            p.ReceiveDamage(damageOverTime * Time.deltaTime);
         }
     }
 }

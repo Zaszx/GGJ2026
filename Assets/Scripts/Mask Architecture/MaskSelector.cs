@@ -2,6 +2,19 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 
+public struct PlayerMaskSprites
+{
+    public Sprite crown;
+    public Sprite face;
+    public Sprite teeth;
+    public void Construct(Sprite c, Sprite f, Sprite t)
+    {
+        crown = c;
+        face = f;
+        teeth = t;
+    }
+}
+
 public class MaskSelector : MonoBehaviour
 {
 	public bool isTest=false;
@@ -33,29 +46,33 @@ public class MaskSelector : MonoBehaviour
 			titleText.text = "Player 2's turn\nPlayer 1, look away!";
 			playerOneTurn = false;
 
-			PlayerMaskSelections.Player1Top = topSelector.GetSelectedIndex();
-			PlayerMaskSelections.Player1Mid = midSelector.GetSelectedIndex();
-			PlayerMaskSelections.Player1Bottom = bottomSelector.GetSelectedIndex();
-
+			//Skill Mask
 			ShamanMask p1Mask = new(topSelector.GetMaskPiece(), midSelector.GetMaskPiece(), bottomSelector.GetMaskPiece());
 
 			PlayerMaskSelections.Player1Mask = p1Mask;
 
-			topSelector.Init(topPiece);
+			//Sprites
+			PlayerMaskSprites _p1Sprites = new();
+			_p1Sprites.Construct(topSelector.GetSelectedSprite(), midSelector.GetSelectedSprite(), bottomSelector.GetSelectedSprite());
+            PlayerMaskSelections.p1Sprites = _p1Sprites;
+
+            topSelector.Init(topPiece);
 			midSelector.Init(midPiece);
 			bottomSelector.Init(bottomPiece);
 		}
 		else
 		{
-			PlayerMaskSelections.Player2Top = topSelector.GetSelectedIndex();
-			PlayerMaskSelections.Player2Mid = midSelector.GetSelectedIndex();
-			PlayerMaskSelections.Player2Bottom = bottomSelector.GetSelectedIndex();
-
+            //Skill Mask
             ShamanMask p2Mask = new(topSelector.GetMaskPiece(), midSelector.GetMaskPiece(), bottomSelector.GetMaskPiece());
 
             PlayerMaskSelections.Player2Mask = p2Mask;
 
-			if (!isTest)
+            //Sprites
+            PlayerMaskSprites _p2Sprites = new();
+            _p2Sprites.Construct(topSelector.GetSelectedSprite(), midSelector.GetSelectedSprite(), bottomSelector.GetSelectedSprite());
+			PlayerMaskSelections.p2Sprites = _p2Sprites;
+
+            if (!isTest)
 				SceneManager.LoadScene("Arena");
 			else SceneManager.LoadScene("AgahTest");
 		}

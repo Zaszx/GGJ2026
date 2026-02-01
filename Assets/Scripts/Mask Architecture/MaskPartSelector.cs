@@ -37,6 +37,11 @@ public class MaskPartSelector : MonoBehaviour
 		maskImage.sprite = maskPartSprites[selectedIndex];
 	}
 
+	public Sprite GetSelectedSprite()
+	{
+		return maskImage.sprite;
+    }
+
 	public int GetSelectedIndex()
 	{
 		return selectedIndex;

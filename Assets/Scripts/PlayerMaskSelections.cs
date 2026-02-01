@@ -15,4 +15,7 @@ public static class PlayerMaskSelections
 
 	public static bool PlayerOneWins;
 
+	public static PlayerMaskSprites p1Sprites;
+    public static PlayerMaskSprites p2Sprites;
+
 }
